@@ -5,7 +5,8 @@ tags: [
 	Responsive design,
 	Media Queries,
 	JS debugging,
-	JS comparisions,
+	JS operators,
+	coercion,
 	DOM events
 ]
 ---
@@ -16,17 +17,18 @@ tags: [
 - [Media Queries]()
 - [JS Debugging](https://byui-cit.github.io/learning-modules/modules/js/debugging/prepare1/)
 - [Making Comparisions](https://byui-cit.github.io/learning-modules/modules/js/operators/prepare1/)
-- [Conditional and Branching](https://byui-cit.github.io/learning-modules/modules/js/operators/prepare2/)
-- [Manipulating Documents](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents): Read though the section "Getting useful information from the Window object"
+- [Conditionals and Branching](https://byui-cit.github.io/learning-modules/modules/js/operators/prepare2/)
+- [Event driven programming](https://byui-cit.github.io/learning-modules/modules/js/dom-events/prepare1/)
+
 
 ## Ponder
 
 - [Working with Media Queries]()
 - [Debugging Practice](https://byui-cit.github.io/learning-modules/modules/js/debugging/ponder1/)
-- [Practice with the DOM](https://byui-cit.github.io/learning-modules/modules/js/dom-basics/ponder1/)
+- [Practice with DOM Events](https://byui-cit.github.io/learning-modules/modules/js/dom-events/ponder1/)
 <!-- https://byui-cit.github.io/learning-modules/modules/js/operators/ponder1/ -->
 
 ## Prove
 
-[Mission Statement I](../../prove/mission-statement-1)
-[Mission Statement II](../../prove/mission-statement-2)
+[?? part I](../../prove/mission-statement-1)
+[?? part II](../../prove/mission-statement-2)

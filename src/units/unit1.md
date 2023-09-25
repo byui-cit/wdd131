@@ -11,10 +11,22 @@ tags: [
 
 ## Prepare
 
-- [JS Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/)
-- [DOM Basics](https://byui-cit.github.io/learning-modules/modules/js/dom-basics/)
+### Review as needed
+
+- [HTML Introduction](https://byui-cit.github.io/learning-modules/modules/html/html-intro/)
+- [CSS Introduction](https://byui-cit.github.io/learning-modules/modules/css/css-intro/)
+
+### Read
+
+- [MDN Variables](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#variables) (Read the section on Variables)
+- [Understanding Javascript Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/prepare1/)
+- [Manipulating Documents](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents): Read though the section "Getting useful information from the Window object"
 
 ## Ponder
+
+- [HTML/CSS Review]()
+- [Practice with JS Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/ponder1/)
+- [Practice with the DOM](https://byui-cit.github.io/learning-modules/modules/js/dom-basics/ponder1/)
 
 ## Prove
 

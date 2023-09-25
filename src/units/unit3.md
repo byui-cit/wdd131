@@ -1,6 +1,6 @@
 ---
 title: Unit Three, Assessibility
-summary: This unit will teach the importance of making our pages accessible along with methods to do so. Functions and Array methods will also be introduced
+summary: This unit will teach the importance of making our pages accessible along with methods to do so. Javascript Functions and Array methods will also be introduced
 tags: [seo,
 		 	assessibility,
 			css custom properties,
