@@ -1,0 +1,26 @@
+:root {
+    --textColor: #1A1A1A;
+    --primaryColor: #e48a0d;
+    --focusColor: #7b2d26;
+    --backgroundColor: #ffffff;
+		--header-background: #e48a0d;
+  --callout-background-color: #eaeaea;
+  --linkColor: #9a5e09;
+  --linkVisited: #744607;
+  --codeColor: #1e6685;
+  --kbdColor: #7b2d26;
+  --textLight: #f0f3f5;
+}
+
+// Very basic support for a dark color scheme
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-mode: 'dark';
+    }
+
+    :root:not([data-user-color-scheme]) {
+        --backgroundColor: #1A1A1A;
+        --textColor: #eeeeee;
+        --primaryColor: #e48a0d;
+    }
+}
