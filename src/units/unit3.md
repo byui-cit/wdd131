@@ -10,16 +10,16 @@ tags: [seo,
 
 ## Prepare
 
-- [Assessibility]()
-- [SEO]()
-- [CSS custom properties]()
+- [Assessibility](#)
+- [SEO](#)
+- [CSS custom properties](#)
 - [JS Array Methods](https://byui-cit.github.io/learning-modules/modules/js/array-methods/prepare1/)
 - [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions): Stop at the section "Scope and the function stack"
 - [Introduction to JS functions](https://byui-cit.github.io/learning-modules/modules/js/organizing-functions/prepare1/)
 
 ## Ponder
 
-- [Working with Media Queries]()
+- [Working with Media Queries](#)
 - [Practice with Array Methods](https://byui-cit.github.io/learning-modules/modules/js/array-methods/ponder1/)
 - [Practice with Functions](https://byui-cit.github.io/learning-modules/modules/js/organizing-functions/ponder1/)
 

@@ -56,7 +56,7 @@ module.exports = function (eleventyConfig) {
 							criticalBase: './_site/',
 							criticalPages: [
 								{ uri: 'index.html', template: 'index' },
-								{ uri: 'posts/index.html', template: 'posts/index' },
+								{ uri: 'units/index.html', template: 'units/index' },
 								{ uri: '404.html', template: '404' }
 							],
 							criticalConfig: {
