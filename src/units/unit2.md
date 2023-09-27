@@ -1,5 +1,5 @@
 ---
-title: Unit Two, Responsive Design
+title: Unit Two - Responsive Design
 summary: This unit will introduce the tools and concepts behind responsive web pages. It will also discuss making comparisions and branching in Javascript. Finally it will introduce DOM events
 tags: [
 	Responsive design,
