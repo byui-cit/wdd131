@@ -1,19 +1,9 @@
 ---
 title: Mission Statement part I
+description: This activity will have you re-create the University mission statement in HTML and CSS. You will need to pay close attention to detail and apply padding margin, font-size, line-height, letter-spacing, centering and more to get it right.
+time: 60 minutes
 ---
 
----
-
-<h2>Activity&nbsp;Instructions</h2>
-<p>Estimated Time: 60 minutes</p>
-<p>
-	This activity will have you re-create the University mission statement
-	in HTML and CSS. You will need to pay close attention to detail and
-	apply padding, margin, font-size, line-height, letter-spacing,
-	centering and more to get it right.
-</p>
-
-<div class="bigSteps">
 <ol >
 <li>
 <!-- START STEP -->
@@ -247,4 +237,3 @@ title: Mission Statement part I
 <!-- END STEP -->
 </li>
 </ol>
-</div>

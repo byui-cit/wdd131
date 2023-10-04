@@ -1,28 +1,16 @@
 ---
 title: Astronomy Pic of the Day part 1
+description: This activity will have you create a page to display a new picture every day retrieved from an open API that NASA provides. You will be provided a site plan for the page we will be building. You will need to pay close attention to the detail in the plan (which includes a wireframe and Mockup) and apply padding, margin, font-size, line-height, letter-spacing, centering, Grid, and more to get it right.
+time: 2 hours
 ---
 
-- - -
-
-<h2>Activity&nbsp;Instructions</h2>
-<p>Estimated Time: 2 hours</p>
-<p>
-This activity will have you create a page to display a new picture
-every day retrieved from an open API that NASA provides. You will be
-provided a site plan for the page we will be building. You will need
-to pay close attention to the detail in the plan (which includes a
-wireframe and Mockup) and apply padding, margin, font-size,
-line-height, letter-spacing, centering, Grid, and more to get it
-right.
-</p>
-<div class="bigSteps">
 <ol >
 <li>
 <!-- START STEP -->
 <h2>Review the site plan</h2>
 <p>
 Begin by reviewing the
-<a href="apod/site-plan.html">site plan</a> to see the details of
+<a href="/examples/apod/site-plan.html">site plan</a> to see the details of
 what we are attempting to create. All of the information we need
 to successfully create this page is there. As you review the
 wireframe try and look for relationships and groupings in the
@@ -103,16 +91,20 @@ solution.
 </p>
 <details>
 <summary>photo Template function</summary>
-<pre><code class="lang-js">function photoTemplate(photo) {
-return `&lt;section class="photo"&gt;
-&lt;img src=${photo.url} alt="${photo.title}"&gt;
-&lt;div&gt;
-&lt;h2&gt;${photo.title}&lt;/h2&gt;
-&lt;h3&gt;${photo.date}&lt;/h3&gt;
-&lt;p&gt;${photo.explanation}&lt;/p&gt;
-&lt;/div&gt;
-&lt;/section&gt;`;
-}</code></pre>
+
+```javascript
+function photoTemplate(photo) {
+return `<section class="photo">
+<img src=${photo.url} alt="${photo.title}">
+<div>
+<h2>${photo.title}</h2>
+<h3>${photo.date}</h3>
+<p>${photo.explanation}</p>
+</div>
+</section>`;
+}
+```
+
 </details>
 <p>
 Finally write a <code>init()</code> function. In that function
@@ -132,6 +124,8 @@ page match the details in the site plan and mockup. Below are a
 few things to note:
 </p>
 <ul>
+<li>Start with the layout in the mobile wireframe. Working mobile first is usually easier. We will finish the wide screen layout in the next part of this assignment.</li>
+<li>For your layouts you should use Flexbox instead of Grid.</li>
 <li>
 For the error box, since we haven't implemented it yet, type
 something into it, then apply your styling. Once you have it
@@ -149,11 +143,7 @@ The images that come back from NASA will probably be larger than
 the space we want to display them in. Remember that you can use
 <code>max-width</code> to make them fit.
 </li>
-<li>
-One thing that is not easy to determine from the site plan is
-how wide the whole page should be. Let's keep the width of
-<code>main</code> to no more than 960px.
-</li>
+
 </ul>
 <div class="callout">
 <p>
@@ -163,25 +153,30 @@ you can find that information provided in the form of
 href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
 >CSS custom properties</a
 >
-(CSS variables). These are a great way of keeping track of
-things like colors, fonts, etc. I think it is far easier to
-remember something like <code>--lilac</code> than to remember
-<code>#73628a</code>
+(CSS variables). We saw these in Unit 2 as well. These are a great way of keeping track of things like colors, fonts, etc.
 </p>
-<pre><code class="lang-css">:root {
+
+```css
+:root {
 --dark-blue: #313d5a;
 --platinum: #eaeaea;
 --lilac: #73628a;
 --fire-opal: #e3655b;
-}</code></pre>
+}
+```
+
 <p>
 Copy/paste the code above into the top of your CSS file, then to
 use them in your CSS you would do something like this:
 </p>
-<pre><code class="lang-css">a:link,
+
+```css
+a:link,
 a:visited {
 color: var(--lilac);
-}</code></pre>
+}
+```
+
 </div>
 
 <!-- END STEP -->
@@ -210,5 +205,3 @@ to replace "githubusername" with YOUR actual github username :)
 <!-- END STEP -->
 </li>
 </ol>
-</div>
-

@@ -1,17 +1,9 @@
 ---
 title: Registration Form part 1
+description: This activity will give you a mostly complete, styled form that could be used to register youth for a camp. Our job will be to make the two buttons on the form functional.
+time: 60 minutes
 ---
 
-- - -
-
-<h2>Activity&nbsp;Instructions</h2>
-<p>Estimated Time: 60 minutes</p>
-<p>
-This activity will give you a mostly complete, styled form that could
-be used to register youth for a camp. Our job will be to make the two
-buttons on the form functional.
-</p>
-<div class="bigSteps">
 <ol>
 <li>
 <!-- START STEP -->
@@ -202,7 +194,9 @@ event.preventDefault();
 	Also create a function to calculate the fee total. You can use
 	the following stub below for that (Make sure to read the
 	comments!):
-	<pre><code class="lang-js">function totalFees() {
+
+```javascript
+function totalFees() {
 // the selector below lets us grab any element that has an id that begins with "fee"
 let feeElements = document.querySelectorAll("[id^=fee]");
 console.log(feeElements);
@@ -215,15 +209,18 @@ feeElements = [...feeElements];
 
 // once you have your total make sure to return it!
 
-}</code></pre>
+}
+```
+
 </li>
 <li>
-	An easy way to hide an element with only Javascript is
-	<pre><code class="lang-js">element.style.display = "none";</code></pre>
-	OR you could create a class in your CSS like:
-	<pre><code class="lang-css">.hide { display: none; }</code></pre>
-	and then in the Javascript do something like
-	<pre><code class="lang-css">element.classlist.add('hide')</code></pre>
+
+An easy way to hide an element with only Javascript is:
+`element.style.display = "none";`
+OR you could create a class in your CSS like:
+`.hide { display: none; }`
+and then in the Javascript do something like
+`element.classlist.add('hide')`
 </li>
 </ul>
 
@@ -294,4 +291,3 @@ sure to replace "githubusername" with YOUR actual github username
 <!-- END STEP -->
 </li>
 </ol>
-</div>

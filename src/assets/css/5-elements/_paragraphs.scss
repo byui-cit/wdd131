@@ -1,6 +1,9 @@
 p {
     font-size: var(--fluid-0);
     line-height: 1.5;
+		max-width: 66ch;
+		// margin-left: auto;
+		// margin-right: auto;
 }
 
 span.marker {

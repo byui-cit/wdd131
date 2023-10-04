@@ -1,17 +1,9 @@
 ---
 title: Astronomy Pic of the Day part 2
+description: This Week we will finish up our version of the Astronomy Pic of the Day site. We will add a form that will allow a user to request a pic from a specific day instead of only giving the current day.
+time: 2 hours
 ---
 
-- - -
-
-<h2>Activity&nbsp;Instructions</h2>
-<p>Estimated Time: 2 hours</p>
-<p>
-This Week we will finish up our version of the Astronomy Pic of the
-Day site. We will add a form that will allow a user to request a pic
-from a specific day instead of only giving the current day.
-</p>
-<div class="bigSteps">
 <ol >
 <li>
 <!-- START STEP -->
@@ -69,12 +61,16 @@ value out of the input, and append it to the URL we used last week
 along with the <code>date</code> filter and the value from our
 input. The new URL should look like this:
 </p>
-<pre><code class="lang-js">apodUrl + `&date=${date.value}`</code></pre>
+
+```javascript
+apodUrl + `&date=${date.value}`
+```
+
 assuming that
-<code
->apodUrl =
-"https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"</code
->
+
+```javascript
+apodUrl ="https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+```
 
 <!-- END STEP -->
 </li>
@@ -95,7 +91,8 @@ will be true if things worked, and false if some sort of problem
 happened. Add an if statement to your function to check
 <code>ok</code>. An example of how that might look is given below
 </p>
-<pre><code class="lang-js">
+
+```javascript
 async function getApod(url) {
 const res = await fetch(url);
 const data = await res.json();
@@ -110,12 +107,14 @@ if (res.ok) {
 // return false to show that something went wrong
 }
 }
-</code></pre>
+```
+
 <p>
 To make finishing the above function easier, add two more
 functions. Stubs for them can be found below
 </p>
-<pre><code class="lang-js">
+
+```javascript
 function showError(msg) {
 //get the error element
 
@@ -132,7 +131,8 @@ function hideError() {
 // add the hide class
 
 }
-</code></pre>
+```
+
 <p>
 Finish implementing those functions, then use them in
 <code>getApod</code> to show errors when appropriate.
@@ -141,41 +141,21 @@ Finish implementing those functions, then use them in
 </li>
 <li>
 <!-- START STEP -->
-<h2>Make the Grid more responsive</h2>
+<h2>Make the page responsive</h2>
 <p>
 Your page should now be looking finished and good...as long as the
-browser window is wide enough. Try reducing the width of your
-browser however. What do you notice?
+browser window is small enough. Try increasing the width of your
+browser however. What do you notice? The image just keeps growing...becoming so tall that you can't see the title and description below. If you go back and review the <a href="/examples/apod/site-plan.html">site plan</a> you will see that on wide screens the layout should switch to 2 columns. Add the media query(s) that will make that change as well as the other changes to the date form shown.
 </p>
-<p>
-At narrow widths the image gets really small, and the text really
-long. Not ideal. It would be good to change the layout slightly
-when the screen gets too small. One way we can do this is by
-taking advantage of CSS grid <code>repeat()</code> and
-<code>auto-fit</code>. Review again the article on
-<a
-href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/"
->auto sizing columns in grid</a
->
-that you should have read earlier this week.
-</p>
-<p>
-Based off of the contents of that article see if you can modify
-your <code>grid-template-columns</code> to make it so that the
-columns can never be smaller than <kbd>400px</kbd>, and never
-bigger than <kbd>1fr</kbd>. Use <code>repeat</code> and
-<code>auto-fit</code> as well so that our grid will switch between
-one and two columns automatically as needed. Once you have your
-solution you can check the solution below
-</p>
-<details>
-<summary>Auto-fit grid columns</summary>
-<pre><code class="lang-css">.photo {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-gap: 2em;
-}</code></pre>
-</details>
+<p>Here are a few things to keep in mind:</p>
+<ul>
+<li>Flexbox makes it really easy to switch from a column layout to a row.</li>
+<li>You may need to set a width on the image after you change your flex direction to get it to behave.</li>
+<li>When setting widths on flex items a width of 100% will cause it to take up the whole row.</li>
+<li>...but YOU have control over whether Flexbox items wrap or not.</li>
+<li>Remember that when overriding a rule in a media query you don't have to include all the properties in the original rule. Only include the properties that need to change.</li>
+</ul>
+
 </li>
 
 <li>
@@ -202,5 +182,3 @@ to replace "githubusername" with YOUR actual github username :)
 <!-- END STEP -->
 </li>
 </ol>
-</div>
-

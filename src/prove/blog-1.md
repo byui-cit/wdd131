@@ -1,23 +1,9 @@
 ---
 title: Build a blog I
+description: This week we will take the design for a simple blog site that you developed in this week's <a href="https://byui-cit.github.io/learning-modules/modules/design/design-basics/ponder1/">Design a Book Review Site</a> activity and build it with HTML and CSS.
+time: 60 minutes
 ---
 
-- - -
-
-## Activity Instructions
-
-Estimated Time: 60 minutes
-
-<p>
-	This week we will take the design for a simple blog site that you
-	developed in this week's
-	<a
-		href="https://byui-cit.github.io/learning-modules/modules/design/design-basics/ponder1/"
-		>Design a Book Review Site</a
-	>
-	activity and build it with HTML and CSS.
-</p>
-<div class="bigSteps">
 <ol >
 <li>
 		<!-- START STEP -->
@@ -315,4 +301,3 @@ Estimated Time: 60 minutes
 <!-- END STEP -->
 </li>
 </ol>
-</div>

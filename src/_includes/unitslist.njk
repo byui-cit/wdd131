@@ -9,8 +9,8 @@
             <code>{{ post.url }}</code>
           {% endif %}
         </h2>
-        <p>{{ post.data.summary }}</p>
       </a>
+      <p>{{ post.data.summary }}</p>
       {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
         {{ tag }},

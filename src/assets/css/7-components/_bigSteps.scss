@@ -13,7 +13,13 @@
 		padding-right: 0.5em;
 	}
 }
+	> h2 > strong {
+		font-size: 3rem;
 
+		margin-right: 0.5rem;
+		font-family: 'Impact', serif;
+		line-height: 1;
+	}
 
 	> ol {
 	list-style: none;

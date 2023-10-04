@@ -1,17 +1,9 @@
 ---
 title: Mission Statement part 2
+description: This week we will continue working with the Mission statement page we created last week. We will add some Javascript to allow a user to	choose a light or dark theme for the page. We created the light theme	last week, we will also need to add the CSS for the dark theme now.
+time: 60 minutes
 ---
 
-- - -
-<h2>Activity&nbsp;Instructions</h2>
-<p>Estimated Time: 60 minutes</p>
-<p>
-	This week we will continue working with the Mission statement page we
-	created last week. We will add some Javascript to allow a user to
-	choose a light or dark theme for the page. We created the light theme
-	last week, we will also need to add the CSS for the dark theme now.
-</p>
-<div class="bigSteps">
 <ol>
 <li>
 		<!-- START STEP -->
@@ -282,4 +274,3 @@ function changeTheme() {
 <!-- END STEP -->
 	</li>
 </ol>
-</div>

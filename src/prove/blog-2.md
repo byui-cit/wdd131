@@ -1,20 +1,9 @@
 ---
 title: Build a blog part II
+description: This week we will take the simple blog site that you started developing last week and finish the styling for it so that it matches the mockup. We will also then make the page somewhat dynamic by generating some of the markup for the page with Javascript.
+time: 60 minutes
 ---
 
-- - -
-
-## Activity Instructions
-
-Estimated Time: 60 minutes
-
-<p>
-This week we will take the simple blog site that you started
-developing last week and finish the styling for it so that it matches
-the mockup. We will also then make the page somewhat dynamic by
-generating some of the markup for the page with Javascript.
-</p>
-<div class="bigSteps">
 <ol>
 <li>
 <!-- START STEP -->
@@ -259,4 +248,3 @@ stars: "⭐⭐⭐⭐⭐"
 <!-- END STEP -->
 </li>
 </ol>
-</div>
