@@ -1,6 +1,6 @@
 ---
 title: Mission Statement part 2
-description: This week we will continue working with the Mission statement page we created last week. We will add some Javascript to allow a user to	choose a light or dark theme for the page. We created the light theme	last week, we will also need to add the CSS for the dark theme now.
+description: Next we will continue working with the Mission statement page we created. We will add some Javascript to allow a user to	choose a light or dark theme for the page. We created the light theme	last week, we will also need to add the CSS for the dark theme now.
 time: 60 minutes
 ---
 
@@ -9,7 +9,7 @@ time: 60 minutes
 		<!-- START STEP -->
 		<h2>Organizing our thoughts.</h2>
 		<p>
-			Let's begin by creating a list of steps again to solve the problem
+			Let's begin by creating a list of steps to solve the problem
 			at hand.
 		</p>
 		<ol>
@@ -52,11 +52,11 @@ time: 60 minutes
 					</li>
 					<li>
 						If it is "dark" then add the <code>dark</code> class to body
-						and change the logo src to the white logo.
+						and change the logo image src to the white logo.
 					</li>
 					<li>
 						If it is not "dark" then remove the <code>dark</code> class
-						from the body element and change the image src for the logo
+						from the body element and change the logo image src for the logo
 						to the blue logo.
 					</li>
 				</ol>
@@ -74,9 +74,8 @@ time: 60 minutes
 			choices. In HTML we create a dropdown with a
 			<a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select"
-				>select</a
-			>
-			element.
+				>select element</a
+			>.
 		</p>
 		<p>
 			Add a <code>select</code> element to the top of your HTML page. It
@@ -84,6 +83,11 @@ time: 60 minutes
 			value and the display of the option. You will probably need to
 			review the link above for help with the syntax.
 		</p>
+
+```markup
+<option value="dark">Dark</option>
+```
+
 		<p>
 			Add the class of <code>dark</code> to the
 			<code>body</code> element. We do this now for development
@@ -138,9 +142,8 @@ time: 60 minutes
 			on it is the current foreground/background contrast of colors.
 			Ours is currently 2.34. That is too low! We need a new blue color
 			with better contrast. Many organizations have branding style
-			guides to help establish a brand. BYUI is no exception. You can
-			find their branding guide <a href="">here</a>. Notice there is a
-			colors section. Go check it out.
+			guides to help establish a brand. BYUI is no exception. Here you can
+			find the <a href="https://www.byui.edu/branding/logos">BYUI branding guide</a>. Notice there is a colors section. Go check it out.
 		</p>
 		<p>
 			You can see that the main blue color is "#006EB6". It also lists
@@ -221,11 +224,11 @@ color: somecolor;
 					</li>
 					<li>
 						If it is "dark" then add the <code>dark</code> class to body
-						and change the logo src to the white logo.
+						and change the logo image src to the white logo.
 					</li>
 					<li>
 						If it is not "dark" then remove the <code>dark</code> class
-						from the body element and change the image src for the logo
+						from the body element and change the logo image src for the logo
 						to the blue logo.
 					</li>
 				</ol>

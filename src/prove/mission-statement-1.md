@@ -1,5 +1,5 @@
 ---
-title: Mission Statement part I
+title: Mission Statement Part I
 description: This activity will have you re-create the University mission statement in HTML and CSS. You will need to pay close attention to detail and apply padding margin, font-size, line-height, letter-spacing, centering and more to get it right.
 time: 60 minutes
 ---
@@ -20,7 +20,8 @@ time: 60 minutes
 					alt="mockup of mission statement"
 				/>
 				<figcaption>The goal.</figcaption>
-			</figure>
+
+				</figure>
 		</div>
 <p>
 			Create a new folder to hold this project called
@@ -78,15 +79,15 @@ time: 60 minutes
 			</li>
 		</ul>
 <p>
-			AFTER you have written your HTML compare it to the example below.
-			Your HTML does NOT have to match this potential solution. There is
+			<strong>After</strong> you have written your HTML compare it to the example below.
+			Your HTML does <strong>not</strong> have to match this potential solution. There is
 			more than one way to solve this problem. You should however note
 			the differences and think about why.
 		</p>
 <p>
-			PLEASE do not copy/paste the HTML below into your document. Your
+			<strong>Please</strong> do not copy/paste the HTML below into your document. Your
 			goal in this course is hopefully to learn HTML. Copy/pasting the
-			solution below will NOT help you with this goal. If you see that
+			solution below will <strong>not</strong> help you with this goal. If you see that
 			you need to make changes to your HTML based on what you see below,
 			fix your code, don't copy/paste.
 		</p>
@@ -231,8 +232,8 @@ time: 60 minutes
 			After verifying that your page updated, submit the URL to your
 			page in Ilearn. The URL will look something like this:
 			<kbd>https://githubusername.github.io/wdd130/mission</kbd>. Make
-			sure to replace "githubusername" with YOUR actual github username
-			:)
+			sure to replace "githubusername" with <strong>your</strong> actual github username
+			🙂
 		</p>
 <!-- END STEP -->
 </li>
