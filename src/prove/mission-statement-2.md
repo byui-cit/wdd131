@@ -1,5 +1,5 @@
 ---
-title: Mission Statement part 2
+title: Mission Statement Part 2
 description: Next we will continue working with the Mission statement page we created. We will add some Javascript to allow a user to	choose a light or dark theme for the page. We created the light theme	last week, we will also need to add the CSS for the dark theme now.
 time: 60 minutes
 ---
@@ -112,19 +112,19 @@ time: 60 minutes
 			<a
 				href="https://developer.mozilla.org/en-US/docs/Web/Accessibility"
 				>accessibility</a>
-			issue. Making a site accessible mean that we do everything we can
+			issue. Making a site accessible means that we do everything we can
 			to make it work for everyone, including people who may have some
 			sort of disability like vision issues.
 		</p>
 		<p>
 			Accessibility guidelines recommend that the contrast between
-			colors be at least 4 for smaller text. We can easily check this in
+			colors be at least 4.5 for smaller text. We can easily check this in
 			Chrome or Firefox. These instructions will assume you are using
 			Chrome.
 		</p>
 		<p>
 			Open the Developer tools (right-click anywhere on the page and
-			choose "Inspect"
+			choose "Inspect")
 		</p>
 		<p>
 			In the "Elements" tab find the <code>h2</code> element that holds
