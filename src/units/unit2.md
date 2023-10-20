@@ -30,5 +30,5 @@ tags: [
 
 ## Prove
 
-[Cool Pics part I](../../prove/cool-pics-1)
-[?? part II](../../prove/mission-statement-2)
+[Cool Pics part 1](../../prove/cool-pics-1)
+[Cool Pics part 2](../../prove/cool-pics-2)
