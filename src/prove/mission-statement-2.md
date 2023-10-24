@@ -270,7 +270,7 @@ function changeTheme() {
 <p>
 			After verifying that your page updated, submit the URL to your
 			page in Ilearn. The URL will look something like this:
-			<kbd>https://githubusername.github.io/wdd130/mission</kbd>. Make
+			<kbd>https://githubusername.github.io/wdd131/mission</kbd>. Make
 			sure to replace "githubusername" with YOUR actual github username
 			:)
 		</p>

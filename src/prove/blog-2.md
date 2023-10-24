@@ -242,7 +242,7 @@ stars: "⭐⭐⭐⭐⭐"
 <p>
 	After verifying that your page updated, submit the URL to your
 	page in Ilearn. The URL will look something like this:
-	<kbd>https://githubusername.github.io/wdd130/</kbd>. Make sure to
+	<kbd>https://githubusername.github.io/wdd131/blog</kbd>. Make sure to
 	replace "githubusername" with YOUR actual github username :)
 </p>
 <!-- END STEP -->

@@ -106,7 +106,7 @@ For the large screen version of our modal let's not let the modal take up the wh
 
 The next step is to add the Javascript to make the modal show when an image in the gallery is clicked.
 
-- Copy the html for the modal and add it to a function in the js file called `viewerTemplate`. This function shuold accept two arguments: the url for the image, and the alt text. Insert those into the correct places in the template and return it from the function. Make sure to remove the html for the viewer from the index.html file!
+- Copy the html for the modal and add it to a function in the js file called `viewerTemplate`. This function should accept two arguments: the url for the image, and the alt text. Insert those into the correct places in the template and return it from the function. Make sure to remove the html for the viewer from the index.html file!
 
 <details>
 <summary>viewer template function</summary>
@@ -179,4 +179,4 @@ function viewHandler(event) {
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd130/apod</kbd>. Make sure to replace "githubusername" with **your** actual github username :)
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/coolpics</kbd>. Make sure to replace "githubusername" with **your** actual github username :)

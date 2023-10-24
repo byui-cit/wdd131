@@ -13,6 +13,7 @@ time: 60 minutes
 			blog. Below you will find a wireframe, and a mockup that we will
 			use to guide us in this.
 			</p>
+			<div class="fig-block">
 		<figure>
 			<img
 				src="https://byui-cit.github.io/learning-modules/img/design-wireframe-final.png"
@@ -27,6 +28,7 @@ time: 60 minutes
 			/>
 			<figcaption>Mockup</figcaption>
 		</figure>
+		</div>
 		<p>
 			After reviewing the wireframe spend some time thinking about what
 			parts of the layout should be grouped together in HTML, and what
@@ -120,7 +122,7 @@ time: 60 minutes
 		<!-- START STEP -->
 		<h2>Add the CSS for the layout.</h2>
 		<p>
-			Using the CSS Grid that we studied this week, write the CSS to
+			Using the CSS Grid, write the CSS to
 			apply the layout from the wireframe to your page.
 		</p>
 		<p>There are 3 places where we will need to use simple grids.</p>
@@ -148,7 +150,7 @@ time: 60 minutes
 		</p>
 		<p>
 			To create the grid for the navigation we need to look at the HTML
-			structure we used for the links and identify the Grid container
+			structure we used for the links and identify the Grid Container
 			and the Grid Items. If your HTML looked similar to what is below:
 		</p>
 
@@ -163,7 +165,7 @@ time: 60 minutes
 ```
 
 <p>
-			What element would be the container and which elements the items?
+			...what element would be the container and which elements the items?
 			What selector would you use to select the container?
 		</p>
 <details>
@@ -182,7 +184,7 @@ time: 60 minutes
 			</p>
 		</details>
 <p>
-			Once you have identified your grid container, add the CSS rule to
+			Once you have identified your Grid Container, add the CSS rule to
 			turn on grid for that element and create 3 columns wide enough to
 			fit the text of the links (you may want to refer back to the
 			mockup above)
@@ -191,6 +193,7 @@ time: 60 minutes
 			Your page should look similar to the screenshot below at this
 			point.
 		</p>
+		<div class="fig-block">
 <figure>
 			<img
 				src="/assets/images/book-review-nav-started.jpeg"
@@ -198,10 +201,11 @@ time: 60 minutes
 			/>
 			<figcaption>First Grid added</figcaption>
 		</figure>
+		</div>
 <p>
-			We have one more Grid related task for the navigation. The Grid
+			We have one more CSS Grid related task for the navigation. The grid
 			needs to be on the right side of the screen instead of the left.
-			This is easy to do with the Grid alignment tools. We can use
+			This is easy to do with the grid alignment tools. We can use
 			<code>justify-content: end;</code>, and
 			<code>justify-items: end;</code> to re-align it. We will learn
 			more about CSS Grid alignment in a later lesson, but if you want a
@@ -212,15 +216,14 @@ time: 60 minutes
 			for some idea about how they work.
 		</p>
 		<p>
-			With the first Grid as a model you now should add the other two
+			With the first grid as a model you now should add the other two
 			grids to the page. One to take the article details and place them
 			to the left of the article content, and the other to place the
 			articles to the left of the box that will contain our filters. Add
 			the CSS to create those two grids.
 		</p>
 		<p>
-			You should follow the same process of identifying the Grid
-			Container and Grid Items first. If all of the elements you need to
+			You should follow the same process of identifying the Grid Container and Grid Items first. If all of the elements you need to
 			be Grid Items do not share the same parent in the HTML, you may
 			need to change your HTML structure so that they do.
 		</p>
@@ -271,6 +274,7 @@ time: 60 minutes
 			to below. (Your colors and fonts do not have to match the
 			screenshot)
 		</p>
+		<div class="fig-block">
 <figure>
 			<img
 				src="/assets/images/book-review-part-1.jpeg"
@@ -278,6 +282,7 @@ time: 60 minutes
 			/>
 			<figcaption>End of Part one</figcaption>
 		</figure>
+		</div>
 		<!-- END STEP -->
 </li>
 <li>
@@ -295,8 +300,8 @@ time: 60 minutes
 <p>
 			After verifying that your page updated, submit the URL to your
 			page in Ilearn. The URL will look something like this:
-			<kbd>https://githubusername.github.io/wdd130/</kbd>. Make sure to
-			replace "githubusername" with YOUR actual github username :)
+			<kbd>https://githubusername.github.io/wdd131/blog</kbd>. Make sure to
+			replace "githubusername" with **your** actual github username :)
 		</p>
 <!-- END STEP -->
 </li>

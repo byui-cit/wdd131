@@ -110,4 +110,4 @@ Add another media query to make the necessary changes. Make sure to hide the "Me
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd130/apod</kbd>. Make sure to replace "githubusername" with YOUR actual github username :)
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/coolpics</kbd>. Make sure to replace "githubusername" with YOUR actual github username :)

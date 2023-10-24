@@ -3,7 +3,7 @@ import recipes from './recipes.js'
 function recipeTemplate(recipe) {
 	return `<figure class="recipe">
 	<img
-		src="images/12409-apple-crisp-II-MFS-033-beauty1-4x3-e7f6d6c193484e0daa43e571723ff16e.jpg"
+		src="${recipe.image}"
 		alt="${recipe.name}"
 	/>
 	<figcaption>
