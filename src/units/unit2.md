@@ -23,7 +23,7 @@ tags: [
 
 ## Ponder
 
-- [Working with Media Queries](#)
+- [Practice with Media Queries](#)
 - [Debugging Practice](https://byui-cit.github.io/learning-modules/modules/js/debugging/ponder1/)
 - [Practice with DOM Events](https://byui-cit.github.io/learning-modules/modules/js/dom-events/ponder1/)
 <!-- https://byui-cit.github.io/learning-modules/modules/js/operators/ponder1/ -->

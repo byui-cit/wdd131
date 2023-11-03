@@ -70,6 +70,7 @@ time: 60 minutes
 				links right? So it would make sense to use the HTML element that
 				matches (<code>&lt;li&gt;</code>)
 			</p>
+			<p>Also keep in mind the accessibility of your page when choosing your elements. For example what should you use for the article date? Visually the date is larger than the surrounding text which makes it stand out. How can we do something similar for a person using a screen reader?</p>
 		</div>
 		<p>
 			You can skip the filter form for now as we will learn about forms
@@ -284,6 +285,14 @@ time: 60 minutes
 		</figure>
 		</div>
 		<!-- END STEP -->
+</li>
+<li>
+<!-- START STEP -->
+<h2>Check Accessibility</h2>
+
+Take a moment to review the accessibility of the work you have done so far. Run the Lighthouse tool against your page. How did you do?  Aim for a score on accessibility of at least 95%.
+
+<!-- END STEP -->
 </li>
 <li>
 <!-- START STEP -->

@@ -174,7 +174,7 @@ const recipes = [
 		cookTime: '11 min',
 		datePublished: '2018-09-19',
 		tags: ['dessert'],
-		description: 'Delicious soft chocolate cookies with coconut.',
+		description: 'Delicious soft chocolate chip cookies with coconut.',
 		image: './images/chocolate-chip-cookies.jpg',
 		recipeIngredient: [
 			'1 Lb butter, softened',

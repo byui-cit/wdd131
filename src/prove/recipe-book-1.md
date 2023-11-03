@@ -6,11 +6,13 @@ time: 2 hours
 
 ## **01** Review the site plan
 
-Begin by reviewing the provided mockup below to see what the webpage will look like on both small screens and large. You can use the indicated colors and fonts or you can choose some of your own.
+Begin by reviewing the provided wireframes and mockup below to see what the webpage will look like on both small screens and large. You can use the indicated colors and fonts or you can choose some of your own.
 
-![CoolPics mockup small](/assets/images/coolpics-mockup-sm.png)
+![Recipe book wireframe small](/assets/images/recipe-book-wireframe-sm.png)
 
-![CoolPics mockup large](/assets/images/coolpics-mockup-lg.png)
+![Recipe Book wireframe large](/assets/images/recipe-book-wireframe-lg.png)
+
+![Recipe Book mockup large](/assets/images/recipe-book-wireframe-lg.png)
 
 Create a new folder to hold this project called <kbd>coolpics</kbd>. Then create an html file: <kbd>index.html</kbd>,a javascript file: <kbd>coolpics.js</kbd> and a css file: <kbd>coolpics.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript.
 

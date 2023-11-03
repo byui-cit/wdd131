@@ -18,13 +18,15 @@ tags: [
 
 ### Read
 
+- [Javascript Introduction](https://byui-cit.github.io/learning-modules/modules/js/introduction/prepare1/)
 - [MDN Variables](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#variables) (Read the section on Variables)
 - [Understanding Javascript Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/prepare1/)
 - [Manipulating Documents](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents): Read though the section "Getting useful information from the Window object"
 
 ## Ponder
 
-- [HTML/CSS Review]()
+- [CSS Diner](https://flukeout.github.io)  CSS review and practice
+- [Running Javascript](https://byui-cit.github.io/learning-modules/modules/js/introduction/ponder1/)
 - [Practice with JS Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/ponder1/)
 - [Practice with the DOM](https://byui-cit.github.io/learning-modules/modules/js/dom-basics/ponder1/)
 
