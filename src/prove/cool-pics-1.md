@@ -14,13 +14,25 @@ Begin by reviewing the provided mockup below to see what the webpage will look l
 
 Create a new folder to hold this project called <kbd>coolpics</kbd>. Then create an html file: <kbd>index.html</kbd>,a javascript file: <kbd>coolpics.js</kbd> and a css file: <kbd>coolpics.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript.
 
+> Remember In the Mission Statement assignment when you were asked to add more metadata to the `head` of your document? We should add that list to all of our pages moving forward. Here is it again with one new addition:
+>
+> - Meta Charset Attribute
+> - Title Element
+> - Viewport Meta Element: **new** for this week!
+> - Meta Description Element: Short description of the site
+> - Meta Author Element
+> - Link reference to your CSS file.
+> - Script Element linking to a Javascript file (When using Javascript)
+>
+> For more information see: [MDN: What's in the Head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+
 Finally download these two images and add them to the project: [norris-sm.jpeg](https://wdd131.netlify.app/examples/cool-pics/norris-sm.jpeg) and [norris-full.jpeg](https://wdd131.netlify.app/examples/cool-pics/norris-full.jpeg)
 
-Make sure to add a new link to the site <kbd>/index.html</kbd> file as well!
+Make sure to add a new link to the site `/index.html` file as well!
 
 ## **02** Write the HTML
 
-Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the title of the site and navigation. You can copy/paste the following for the title <kbd>Cool Pics 📷</kdb>.
+Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the title of the site and navigation. You can copy/paste the following for the title `Cool Pics 📷`.
 
 In the footer we will provide a simple copyright message: <kbd>&copy;2023 Not a real site :)</kbd>.
 

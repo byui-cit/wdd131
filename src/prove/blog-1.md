@@ -45,13 +45,13 @@ time: 60 minutes
 		<!-- START STEP -->
 		<h2>Write the HTML</h2>
 		<p>
-			Add a new directory called <kbd>blog</kbd> to your WDD130
+			Add a new directory called <kbd>blog</kbd> to your WDD131
 			directory. Add new <kbd>index.html</kbd> and
 			<kbd>blog.css</kbd> files inside that new directory. Then open the
 			main <kbd>index.html</kbd> for your site (the one at the root of
-			the WDD130 directory) and add a link to this new page
+			the WDD131 directory) and add a link to this new page
 			(<kbd>blog/</kbd>). Finally download this
-			<a href="../teacher/blog/articles.js">javascript file</a> and add
+			<a href="/examples/blog/articles.js">javascript file</a> and add
 			it to the <kbd>blog/</kbd> directory with the others. This file
 			contains information you can use as you write the HTML about a
 			couple of books.
@@ -62,22 +62,22 @@ time: 60 minutes
 			make sure to use elements to group related parts of the page
 			together.
 		</p>
-		<div class="callout">
-			<p>
-				When thinking about semantics, you should think in terms of the
-				parts of the page ie: lists, paragraphs, headlines, headers,
-				footers, etc. For example the navigation is made up of a list of
-				links right? So it would make sense to use the HTML element that
-				matches (<code>&lt;li&gt;</code>)
-			</p>
-			<p>Also keep in mind the accessibility of your page when choosing your elements. For example what should you use for the article date? Visually the date is larger than the surrounding text which makes it stand out. How can we do something similar for a person using a screen reader?</p>
-		</div>
-		<p>
-			You can skip the filter form for now as we will learn about forms
-			in the next unit. Do leave a space for it though. Leave yourself a
-			note for now, something like
-			<code>&lt;p&gt;Filter form will go here&lt;/p&gt;</code>
-		</p>
+
+> Also, don't forget to add the recommended items to the `head` of your document!
+>
+> - Meta Charset Attribute
+> - Title Element
+> - Viewport Meta Element: **new** for this week!
+> - Meta Description Element: Short description of the site
+> - Meta Author Element
+> - Link reference to your CSS file.
+> - Script Element linking to a Javascript file (When using Javascript)
+
+> When thinking about semantics, you should think in terms of the parts of the page ie: lists, paragraphs, headlines, headers, footers, etc. For example the navigation is made up of a list of links right? So it would make sense to use the HTML element that matches (`<li>`)
+
+>Also keep in mind the accessibility of your page when choosing your elements. For example what should you use for the article date? Visually the date is larger than the surrounding text which makes it stand out. How can we do something similar for a person using a screen reader?</p>
+
+You can skip the filter form for now as we will learn about forms in the next unit. Do leave a space for it though. Leave yourself a note for now, something like `<p>Filter form will go here</p>`
 
 		<!-- END STEP -->
 </li>

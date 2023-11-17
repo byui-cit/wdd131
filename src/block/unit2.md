@@ -13,8 +13,8 @@ tags: [
 
 ## Prepare
 
-- [Responsive Design](#)
-- [Media Queries](#)
+- [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#)
+- [What are Media Queries?](https://byui-cit.github.io/learning-modules/modules/css/media-queries/prepare1/)
 - [JS Debugging](https://byui-cit.github.io/learning-modules/modules/js/debugging/prepare1/)
 - [Making Comparisions](https://byui-cit.github.io/learning-modules/modules/js/operators/prepare1/)
 - [Conditionals and Branching](https://byui-cit.github.io/learning-modules/modules/js/operators/prepare2/)
@@ -23,7 +23,7 @@ tags: [
 
 ## Ponder
 
-- [Practice with Media Queries](#)
+- [Practice with Media Queries](https://byui-cit.github.io/learning-modules/modules/css/media-queries/ponder1/)
 - [Debugging Practice](https://byui-cit.github.io/learning-modules/modules/js/debugging/ponder1/)
 - [Practice with DOM Events](https://byui-cit.github.io/learning-modules/modules/js/dom-events/ponder1/)
 <!-- https://byui-cit.github.io/learning-modules/modules/js/operators/ponder1/ -->

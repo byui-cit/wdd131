@@ -6,13 +6,11 @@ time: 60 minutes
 
 <ol >
 <li>
-<!-- START STEP -->
-<h2>Review the mockup</h2>
-<p>
-			Begin by reviewing the image below to see what we are attempting
-			to create. Try and look for relationships and groupings in the
-			layout that we might need to represent in the HTML.
-		</p>
+
+## Review the mockup
+
+Begin by reviewing the image below to see what we are attempting to create. Try and look for relationships and groupings in the layout that we might need to represent in the HTML.
+
 <div class="fig-block">
 			<figure>
 				<img
@@ -23,15 +21,20 @@ time: 60 minutes
 
 				</figure>
 		</div>
-<p>
-			Create a new folder to hold this project called
-			<kbd>mission</kbd>. Then create an html file:
-			<kbd>index.html</kbd> and a css file: <kbd>styles.css</kbd>. Add
-			the HTML you need to have a valid new page as well as a
-			<kbd>link</kbd> element for your CSS.
-		</p>
 
-		<!-- END STEP -->
+Create a new folder to hold this project called `mission`. Then create an html file: `index.html` and a css file: `styles.css`. Add the HTML you need to have a valid new page as well as a `link` element for your CSS.
+
+>The `head` of an HTML document is more important that we often give credit for. The user does not see what is there, but it is important to the browser, and to search engines. If we want search engines to be able to work with our pages correctly we should include a bit more information in our `head`.
+>For the rest of the assignments in this course you should include *at least* the following in your `head`
+>
+> - Meta Charset Attribute
+> - Title Element
+> - Meta Description Element: Short description of the site
+> - Meta Author Element
+> - Link reference to your CSS file.
+> - Script Element (When using Javascript)
+>
+> For more information see: [MDN: What's in the Head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 </li>
 <li>
 <!-- START STEP -->

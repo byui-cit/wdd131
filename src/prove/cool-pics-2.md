@@ -146,32 +146,10 @@ function viewHandler(event) {
 <details>
 <summary>Emergency use only!</summary>
 
-```javascript
-function closeViewer() {
-  document.querySelector(".viewer")?.remove();
-}
-function viewHandler(event) {
-	// get the element that was clicked on from event.target
-  const target = event.target
-	// get the src attribute from that element and split it on the "-"
-  const imgSrc = target.src.split("-");
-	// construct the new URL by adding "-full.jpeg" to the first part of the array
-	// from the previous step
-  const newSrc = imgSrc[0] + "-full.jpeg";
-	// insert the viewerTemplate into the top of the body element
-	// (element.insertAdjacentHTML("afterbegin", htmltoinsert))
-  document.body.insertAdjacentHTML(
-    "afterbegin",
-    viewerTemplate(newSrc, target.alt)
-  );
-	// add a listener to the close button (X) that calls a function
-	// called closeViewer when clicked
-  document
-    .querySelector(".close-viewer")
-    .addEventListener("click", closeViewer);
-
-}
-```
+- The element that was clicked on will always be found in `event.target` in the event handler function.
+- All strings in Javascript have a method on them called `split` You just need to pass in the character you want to split the string up in as an argument.
+- element.insertAdjacentHTML is an extremely useful upgrade to just modifying `innerHTML` directly on an element. We have 4 options when using it: beforebegin, afterbegin, beforeend, and afterend. See [MDN: insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) to learn more.
+- All elements have a `remove` method that can be used to remove the element from the DOM
 
 </details>
 
