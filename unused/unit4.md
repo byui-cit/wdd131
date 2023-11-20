@@ -10,9 +10,11 @@ tags: [forms,
 
 ## Prepare
 
-- HTML Forms: "How are forms used to gather information from users on the web?", "What problems should I watch for when creating HTML forms?", "How can I style HTML forms with CSS?"
-- Javascript Objects: "What is the purpose for objects in Javascript?", "How do I create an object?", "How can I access the properties of an object?"
-- ES Modules: "What are ES modules?" "How can ES modules be used to organize code in Javascript?"
+- [HTML Forms](#)
+- [Styling forms](#)
+- [Representing data](https://byui-cit.github.io/learning-modules/modules/js/objects/prepare1/)
+- [Introduction to libraries with ES Modules](https://byui-cit.github.io/learning-modules/modules/js/organizing-modules/prepare1/)
+- [JavaScript Modules: From IIFEs to CommonJS to ES6 Modules](https://ui.dev/javascript-modules-iifes-commonjs-esmodules/)
 
 ## Ponder
 
