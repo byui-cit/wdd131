@@ -4,6 +4,11 @@ layout: prove
 # Accessibility Practice
 
 - - - 
+<!-- Clean up heading levels -->
+<!-- Check what chatGPT would tell them based on our orignal prompts to see what will come up for them (check prepare for questions that are already there) -->
+## Introduction
+<!-- Review what is accessibility, why do we care, show the list and things that have to be looked at, for the purposes of this class, 5 categories -->
+[HTML Checklist](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/HTML.aspx)
 
 ## Basic Concepts
 If you can remember these accessibility concepts when building a website, you'll be ahead of most developers.
@@ -23,13 +28,13 @@ Headings should:
 
 Headings should <strong>not</strong> be used just to style content.
 
-#### Heading Levels 
+### Heading Levels 
 There are six heading levels in HTML. If more than six heading levels are needed, you'll need to split the content at major sections. Only use one heading level 1 on a page.
 
-#### Skipping Levels 
+### Skipping Levels 
 When closing sub-sections, you can skip up to a higher level, but when adding a new sub-section, you should never skip a level (e.g., heading 4 may proceed heading 2, but heading 2 should never directly proceed heading 4).
 
-##### Incorrect Heading Structure Example
+#### Incorrect Heading Structure Example
 <!-- idk how to do the wrong example in markdown with a list -->
 <!-- preformatted text -->
 <pre>
@@ -37,7 +42,7 @@ When closing sub-sections, you can skip up to a higher level, but when adding a 
         - H3
 </pre>
 
-##### Correct Heading Structure Example
+#### Correct Heading Structure Example
 - H1
     - H2
         - H3
@@ -55,14 +60,21 @@ When closing sub-sections, you can skip up to a higher level, but when adding a 
 - Heading 4 – Sub-section of Heading 3 (examples, details) 
 - Heading 2 – Next broad main idea 
 
-### 02 Link Text
+## 02 Link Text
 When you're adding links to your website, the text you use for those links should be meaningful. Instead of generic phrases like "click here," use words that tell people what they'll find when they click. Imagine someone coming across your link without the surrounding text, like when they're searching or in a list. You want your link to still make sense on its own, so people understand where it's going.
-#### Link Text Example
+<!-- Actual link -->
+<!-- Details drop down -->
+### Link Text Example
 Here are examples of good and bad link text for an article about healthy eating (brackets {} used to denote link text):
-##### Bad Example:
-{Click here for more information}
+#### Example 1:
+{Click here for more information} about recipes for a healthier diet.
+
+<details>
+<summary>Answer 1</summary>
 
 **Why it's bad:** This link text doesn't tell users where the link will take them or what they'll find when they click. It's generic and doesn't offer any context.
+</details>
+
 ##### Good Example:
 
 {Discover 5 Easy Recipes for a Healthier Diet}
@@ -159,7 +171,7 @@ The second part of the activity focuses on hands-on practice. Pick a past websit
 Now that you see the errors, go through and remediate your site, especially the ones that fall into the 5 categories of accessibility we've talked about. Run the lighthouse tool again and see your accessibility score go up! Try to get as close to 95% or higher as possible.
 <!-- provide an example for them to remediate if they just can't find one that has issues? (unlikely, but still lol) -->
 
-### Comparison
+<!-- ### Comparison
 - look at bad example of an accessible website
     - pick any news site
     - run lighthouse tool (could take a few minutes)
@@ -177,9 +189,8 @@ Now that you see the errors, go through and remediate your site, especially the 
 - remediate the site you chose
 - run the lighthouse tool again
 - screenshot fixed lighthouse accessibility
-- lighthouse score should be at least 95%
+- lighthouse score should be at least 95% -->
 <!-- Make chat gpt copy thompson's writing style -->
     <!-- check what chat gpt generated in the Web Dev Accessibility chat -->
 <!-- ask chat gpt how long reading this and completing the activity might take -->
 
-[HTML Checklist](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/HTML.aspx)
