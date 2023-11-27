@@ -23,8 +23,9 @@ Ask the AI to summarize your conversation in a Q/A format to turn in.
 
 ## Ponder
 
-- Layout practice: Flexbox: Goto [Flexbox exercises](https://codepen.io/matkat/pen/gWGqJz) and follow the instructions.
-- [Sorting and Filtering](https://byui-cit.github.io/learning-modules/modules/js/fetch-basics/ponder1/)
+- Layout practice: Flexbox: Goto these [Flexbox exercises](https://codepen.io/matkat/pen/gWGqJz) and follow the instructions.
+- Complete the exercises at [Flexbox Froggy](https://flexboxfroggy.com)
+- [Sorting and Filtering](https://byui-cit.github.io/learning-modules/modules/js/sorting-filtering/ponder1/)
 
 ## Prove
 
