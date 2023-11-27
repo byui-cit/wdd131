@@ -4,7 +4,7 @@ description: This activity will have you create a page for a recipe site. It sho
 time: 2 hours
 ---
 
-## **01** Review the site plan
+## **01** Review and plan
 
 Begin by reviewing the provided wireframes and mockup below to see what the webpage will look like on both small screens and large. You can use the indicated colors and fonts or you can choose some of your own.
 
@@ -12,33 +12,60 @@ Begin by reviewing the provided wireframes and mockup below to see what the webp
 
 ![Recipe Book wireframe large](/assets/images/recipe-book-wireframe-lg.png)
 
-![Recipe Book mockup large](/assets/images/recipe-book-wireframe-lg.png)
+![Recipe Book mockup small](/assets/images/recipe-book-mockup-sm.webp)
+![Recipe Book mockup large](/assets/images/recipe-book-mockup-lg.webp)
 
-Create a new folder to hold this project called <kbd>coolpics</kbd>. Then create an html file: <kbd>index.html</kbd>,a javascript file: <kbd>coolpics.js</kbd> and a css file: <kbd>coolpics.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript.
+Create a new folder to hold this project called <kbd>recipes</kbd>. Then create an html file: <kbd>index.html</kbd>,a javascript file: <kbd>recipes.js</kbd> and a css file: <kbd>recipes.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript.
+
+One last setup item. We need to download this file: [recipes.js](https://wdd131.netlify.app/examples/recipes/recipes.js), and add it to the directory for this project.
 
 Make sure to add a new link to the site <kbd>/index.html</kbd> file as well!
 
 ## **02** Write the HTML
 
-Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the title of the site and navigation. You can copy/paste the following for the title <kbd>Cool Pics 📷</kdb>.
+Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the title of the site. In the `images` folder that you downloaded earlier you will notice a file called `recipe-book.png` Use this in the title.
 
-In the footer we will provide a simple copyright message: <kbd>&copy;2023 Not a real site :)</kbd>.
+We are using some icons from a site called Flaticon. We are free to use them, but the license require some attribution in return.  This site asks that we add this link `<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>` Somewhere on the page. Let's put it in the footer.
 
-For the `main` element add the headline as shown on the mockup, then add a `section` element to contain our gallary.  We will just use some placeholder images. An example of how your images can look is below
+Along with the attribution for the recipe book icon, we also need some social media icons.  These icons also require attribution. These icons are provided from Iconfinder through an account called AlfredoCreates. The license here is bit more flexible in how we attribute. This time we will do it in a comment. See below for an example:
 
 ```markup
-<figure>
-	<img src="https://picsum.photos/250" alt="picture">
-</figure>
+<div class="social">
+	<!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+	<a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+	<a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+	<a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+</div>
 ```
+> So that attribution link at the bottom of our site is not the most attractive thing. We can minimize the size (And you should. Try 0.6em), so it is less noticiable, but it will still stick out. What if we don't want to attribute? That is easy...be willing to pay to use the resources. All of these sites remove the attribution requirement if you pay :)
+
+Next create the Search form as shown in the wireframe and mockup.
+
+Finally create the recipe section. You can look in the `recipes.js` file for information. Choose any recipe for now. For the ratings section we want to show filled in and empty stars like the mockup shows. We need to make sure that this very visual rating representation is also accessible. We can use `aria` attributes to do this as seen in the example below.
+
+```markup
+<span
+	class="rating"
+	role="img"
+	aria-label="Rating: 3 out of 5 stars"
+>
+	<span aria-hidden="true" class="icon-star">⭐</span>
+	<span aria-hidden="true" class="icon-star">⭐</span>
+	<span aria-hidden="true" class="icon-star">⭐</span>
+	<span aria-hidden="true" class="icon-star-empty">⭐</span>
+	<span aria-hidden="true" class="icon-star-empty">☆</span>
+</span>
+```
+
+The `aria-label` will be read by the screen reader, and the `aria-hidden="true"` on the stars will tell the screen reader to ignore those and they will not be read.
 
 ## **03** Begin Styling
 
-In the <kbd>coolpics.css</kbd> file begin writing the CSS to make your page match the details in the small screen mockup. Below are a few things to note:
+In the <kbd>recipes.css</kbd> file begin writing the CSS to make your page match the details in the small screen mockup. Below are a few things to note:
 
 - You should resize your browser to be narrow...like a mobile screen. You can do this either through the developer tools, or just by changing the width of your browser
-- Start with the global styles. What font should be used for the body copy and headlines?  What color(s) should links be? Should the base font size be increased? (yes!) Set the color for the header and footer, etc.
-- If you want to match the fonts in the mockup you can use `Mooli` for the headlines (`@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");`), and `Arial, Helvetica,sans-serif` for the rest.
+- Start with the global styles.
+- If you want to match the fonts in the mockup you can use `Amatic SC` for the headlines (`@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");`), and `Arial, Helvetica,sans-serif` for the rest.
 - It would be good to add a rule to make our images responsive. We never want an image to be bigger than the space it has available. Something like the following is common:
 
   ```css
@@ -47,35 +74,20 @@ In the <kbd>coolpics.css</kbd> file begin writing the CSS to make your page matc
   }
   ```
 
-- The "Menu" you see will eventually be used as a button to hide and show the navigation links on mobile. In preparation for that make it a `button` element...then you will need to use CSS to make it look not like a button.
-- If you want to use your own colors feel free, otherwise see below for the colors used in the mockup.
+- You will notice that with everything stacked up on the mobile, we really don't need to do much to get the layout right. You might still use Flexbox though, in column orientation, so we can use the alignment properties as needed.
+- Notice as well that on mobile the recipe description is not shown. When we make it responsive on the next step make sure to show the description on wide screens.
+- There are not a lot of colors in this page, but custom properties are still a good idea to set important style information. Choose a primary and secondary color to use and set them as you see below.
 
-> To specify the fonts and colors which we should use, we can use something called [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (CSS variables). These are a great way of keeping track of things like colors, fonts, etc. I think it is far easier to remember something like `--primary-color` than to remember `#52489c`
->
 > ```css
->  @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+>  @import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
 >  :root {
->  --primary-color: #52489c;
+>  --primary-color: #1B98E0;
 >  --secondary-color: #59c3c3;
->  --accent-color: #f45b69;
 >  --text-dark: #333;
 >  --text-light: #ebebeb;
 >  --primary-font: Arial, Helvetica,sans-serif;
->  --secondary-font: Mooli;
+>  --secondary-font: "Amatic SC";
 >  }
-> ```
->
-> Copy/paste the code above into the top of your CSS file, then to use them in your CSS you would do something like this:
->
-> ```css
-> body {
->   font-family: var(--primary-font);
->   font-size: 1.2em;
-> }
-> a:link,
-> a:visited {
->   color: var(--accent-color);
-> }
 > ```
 
 Continue adding css until your page matches the small screen mockup above.
@@ -84,29 +96,16 @@ Continue adding css until your page matches the small screen mockup above.
 
 At this point your page should look like the narrow mockup above. Now we can add the CSS to make our page responsive to larger screens sizes as well. We will need a `@media` query or two to check for the increasing size of the window...and will make changes at certain sizes or breakpoints as they are often called.
 
-Begin by widening your browser window. Watch what happens to the page. At a certain point you will notice that the layout starts looking a little stretched out. This will probably be around 500px. Let's add the first breakpoint there. At this point we would not have room still for the menu items to fit horizontally...so the only change we will make is to switch our one image column layout to two columns. Add a media query to make this happen (when adapting to an widening screen we should watch `min-width` ). Check the solution below if you get stuck.
+Begin by widening your browser window. Watch what happens to the page. At a certain point you will notice that the layout starts looking a little stretched out. This will probably be around 600px. Let's add the first breakpoint there. Since we are using Flexbox this time around we can simply add a rule to change the `flex-direction` from column to row.
 
-<details>
-<summary>Emergency use only!</summary>
+Next we will keep widening the screen to watch for when the layout starts looking off again. The next point shuold be somewhere around 960px. Wider than this and the page looks too stretched out. Set this as the widest our layout can grow with another media query.
 
-```css
-@media screen and (min-width: 500px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-```
+## **05** Check with Lighthouse
 
-*note that this code assumes you used grid earlier to help with alignment. If you didn't use grid for your mobile layout (since we only had one column) you will need to add at least one more line above: `display: grid;`
-
-</details>
-
-Next we will keep widening the screen to watch for when the layout starts looking off again. The next point shuold be somewhere around 800px. Now we have room for more columns of images...and we have room for the navigation to switch to horizontal.
-
-Add another media query to make the necessary changes. Make sure to hide the "Menu" button as well! We don't need it on the wide screen.
+Open your page in Chrome, and access the LightHouse tool. Run it for mobile first. How does it look? Read through the errors and recommendations. Make changes to get the scores as close to 100 as you can! You should be able to get to at least 95-96%.
 
 ## **05** Commit and push to Github
 
-Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
+Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-github/ponder2/). Start around step 3.
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd130/apod</kbd>. Make sure to replace "githubusername" with YOUR actual github username :)
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/recipes</kbd>. Make sure to replace "githubusername" with YOUR actual github username :)

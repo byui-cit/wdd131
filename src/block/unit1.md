@@ -1,5 +1,5 @@
 ---
-title: Unit One - Introduction - Chat version
+title: Unit One - Introduction
 summary: This Unit will review concepts in HTML and CSS. It will also introduce the basics of Javascript to allow us to begin to make our web pages dynamic
 tags: [
 	HTML basics,

@@ -50,8 +50,10 @@ function random(num) {
 	return Math.floor(Math.random() * num)
 }
 
-function getRandomRecipe() {
-	return recipes[random(recipes.length)]
+function getRandomListEntry(list) {
+	const listLength = list.length
+	const randomNum = random(listLength)
+	return list[randomNum]
 }
 
 function filter(q, reverse = false) {
@@ -86,7 +88,7 @@ function searchHandler(e) {
 }
 
 function init() {
-	const recipe = getRandomRecipe()
+	const recipe = getRandomListEntry(recipes)
 	renderRecipes([recipe])
 }
 document.querySelector('#searchButton').addEventListener('click', searchHandler)

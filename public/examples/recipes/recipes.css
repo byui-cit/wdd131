@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 :root {
-	--logo-font: 'Amatic SC', cursive;
-	--body-font: Arial, Helvetica, sans-serif;
+	--primary-color: #1b98e0;
+	--secondary-color: #59c3c3;
+	--text-dark: #333;
+	--text-light: #ebebeb;
+	--primary-font: Arial, Helvetica, sans-serif;
+	--secondary-font: 'Amatic SC';
 }
 
 * {
@@ -12,7 +16,7 @@
 body {
 	margin: 0;
 	font-size: 1.2em;
-	font-family: var(--body-font);
+	font-family: var(--primary-font);
 }
 
 img {
@@ -21,7 +25,7 @@ img {
 
 h1,
 h2 {
-	font-family: var(--logo-font);
+	font-family: var(--secondary-font);
 }
 
 hr {
@@ -32,6 +36,7 @@ hr {
 a:link,
 a:visited {
 	text-decoration: none;
+	color: var(--primary-color);
 }
 
 a:hover {
@@ -39,7 +44,7 @@ a:hover {
 }
 
 header > h1 {
-	font-family: var(--logo-font);
+	font-family: var(--secondary-font);
 	font-size: 3em;
 	text-align: center;
 }
@@ -97,7 +102,7 @@ h1 > img {
 }
 
 .attribution {
-	font-size: 0.8em;
+	font-size: 0.6em;
 }
 
 footer {
@@ -105,6 +110,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-direction: column-reverse;
 }
 .social img {
 	width: 44px;
@@ -124,5 +130,8 @@ footer {
 	}
 	.recipe__description {
 		display: block;
+	}
+	footer {
+		flex-direction: row;
 	}
 }
