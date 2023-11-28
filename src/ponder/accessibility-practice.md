@@ -4,13 +4,18 @@ layout: prove
 # Accessibility Practice
 
 - - - 
-<!-- Check what chatGPT would tell them based on our orignal prompts to see what will come up for them (check prepare for questions that are already there) -->
 ## Introduction
-<!-- Review what is accessibility, why do we care, show the list and things that have to be looked at, for the purposes of this class, 5 categories -->
-[HTML Checklist](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/HTML.aspx)
+<!-- how to do this quote? -->
+The BYU-I Accessibility Office's definition of accessibility, found on their [Digital Accessibility Hub: Getting Started](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/Getting-Started.aspx) page, is 
+> "The practice of ensuring equally effective and equally integrated functionality, interaction with, and access to digital content for all users with substantially equivalent ease of use."
 
-## Basic Concepts
-If you can remember these accessibility concepts when building a website, you'll be ahead of most developers.
+You may be wondering, why do I need to worry about accessibility? Well for one, many countries, including the United States with the Americans with Disabilities Act (ADA), have laws requiring accessibility for digital content. Non-compliance can lead to legal issues and discrimination claims. Web accessibility doesn't just help people with disabilities, though. It often results in a better overall user experience. Designing for accessibility means creating clear and well-organized content, which benefits all users, not just those with disabilities. Accessible websites also tend to have better SEO. Search engines prioritize websites that are user-friendly and provide a positive experience for all visitors.
+
+<!-- Transition here? -->
+
+This [HTML Checklist](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/HTML.aspx), created by the Accessibility Services office at BYU-I, has a list of questions. If you can answer "yes" to all of them, then your website is probably accessible. Go ahead and take a look at the questions on that page. Eventually, you'll need to know how to do all of those things in order to make an accessible website.
+
+For the purposes of this class, though, you'll just be expected to implement these accessibility concepts:
 - Headings
 - Link Text
 - Color Contrast and Fonts
@@ -37,8 +42,11 @@ When closing sub-sections, you can skip up to a higher level, but when adding a 
 <!-- idk how to do the wrong example in markdown with a list -->
 <!-- preformatted text -->
 <pre>
-&#9900; H1
-        - H3
+ &#x2022; H1
+ &#x2022; H1
+         - H3
+     &#9900; H2
+
 </pre>
 
 #### Correct Heading Structure Example
@@ -61,6 +69,8 @@ When closing sub-sections, you can skip up to a higher level, but when adding a 
 
 ## 02 Link Text
 When you're adding links to your website, the text you use for those links should be meaningful. Instead of generic phrases like "click here", use words that tell people what they'll find when they click. Imagine someone coming across your link without the surrounding text. Would they still understand where the link goes?
+
+<!-- Do I need to explain these examples and the answer dropdowns? -->
 
 ### Link Text Example 1:
 [Here](https://webaim.org/intro/) is a great resource for getting started with web accessibility.
@@ -92,6 +102,7 @@ A **link** takes you to a new page. A **button** does an action on the current p
 ## 03 Color Contrast and Fonts
 ### Contrast
 Sufficient contrast should be present between text and background (4.5:1). With large text or adjacent important visual elements (informational images, graphics, etc.) contrast should be at least 3:1. Logos, incidental icons, and decorative elements have no required contrast ratio. Use a color contrast checker to find these numbers.
+
 Keep in mind that some color combinations may be difficult to differentiate between for some colorblindness or visual impairments. You may find it helpful to test your digital content in greyscale to verify color is not the only means used to communicate information and that contrast is sufficient. 
 
 ### Fonts
@@ -105,12 +116,9 @@ Keep in mind that some color combinations may be difficult to differentiate betw
 For more information, read: [Typefaces and Fonts](https://webaim.org/techniques/fonts/)
 
 ### Sensory Characteristics
-Color should never be the only means of conveying information. Watch this video about the [Use of Color Alone to Convey Information](https://www.youtube.com/watch?v=8_eVF0LPs0s) (5 minutes)
+Color should never be the only means of conveying information. Watch this short video about the [Use of Color Alone to Convey Information](https://www.youtube.com/watch?v=8_eVF0LPs0s).
 
-A classic example where we use more than one sensory characteristic is with links. Accessible links, like those you've seen a thousand times, come with two sensory characteristics:
-1. They're underlined.
-2. They have a unique color.
-
+A classic example where we use more than one sensory characteristic is with links. Accessible links, like the ones you often see, are underlined and have a distinct color. Even if the color isn't visible, the presence of the underline makes it clear that it's a link.
 
 ### Tools
 [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - color contrast checker (has eye drop color picker feature)
@@ -125,21 +133,23 @@ Alt text is <strong>not</strong>:
     - source or filename
 
 Alt text goes in the alt attribute of an image tag.
+
+```html
+<img alt="">
+```
 <!-- image tag example here -->
 <!-- figure out how to do that emphasis thing on special terms for "alt" attribute -->
 
-Now, let's talk about decorative images. These are the ones that don't really convey important information. For these, you can use empty alt text (alt=""). This tells assistive technology to skip these images so they don't interrupt the user's flow.
+Now, let's talk about decorative images. These are the ones that don't really convey important information. For these, you can use empty alt text (alt=""). This tells assistive technology to skip these images.
 
-On the flip side, there are images that serve a specific function, like buttons or icons. For these, the alt text should describe that function. It should tell the user what the image does. For example, a logo that takes you to the home page should have alt text that says "Home". It shouldn't describe the logo.
+On the flip side, there are images that serve a specific function, like buttons or icons. For these, the alt text should describe that function. For example, a logo that takes you to the home page should have alt text that says "Home". It shouldn't describe the logo. Alt text for images that are links should follow the same rules as the link text section.
 
 Pay attention to the purpose and context of the image. These may change the way a description is written and where the description is provided. The same image can have different alt text depending on its context. 
-<!-- Describe quizzes example? might not be super applicable -->
 
 <!-- Add in a few examples from the POET tool? -->
-[POET Training Tool](https://poet.diagramcenter.org/)
+Use the [POET Training Tool](https://poet.diagramcenter.org/) to pracice when and how to write alt text.
 
 ## 05 Semantic Elements
-#### Use the Real Deal
 Whenever you can, opt for the actual HTML tags that represent the content or action you're including. For example, instead of dressing up a div to look like a button, just use the button tag.
 
 ### Why Semantic?
@@ -149,14 +159,14 @@ Using semantic HTML elements brings inherent accessibility features to your web 
 
 **Defined Roles:** Each element has a specific role, enabling assistive technologies to interpret their purpose accurately. For example, a button element is recognized as something clickable.
 
+Like we talked about earlier with the definition of accessibility, having equivalent effecviveness and ease of use is easier when you use semantic elements. For example, when you open an article, what's your first instinct? Probably skimming through the headings, right? Using semantic headings ensures that users with assistive technology can also enjoy a similar skimming experience.
+
 ### Keyboard accessibility
-By incorporating semantic HTML elements, you're also enhancing the keyboard-friendliness of your web content. Semantic elements naturally support keyboard navigation and add keyboard focus to clickable elements, allowing users who rely on keyboards to smoothly traverse your content, whether it's links, buttons, or headings.
-<!-- idk where to put this, but I like it -->
-The BYU-I Accessibility Office's definition of accessibility, found on their [Getting Started](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/Getting-Started.aspx) page, is "The practice of ensuring equally effective and equally integrated functionality, interaction with, and access to digital content for all users with substantially equivalent ease of use." Using semantic elements helps with having equivalent effecviveness and ease of use. For example, when you first open an article, what's your first instinct? Probably skimming through the headings, right? Using semantic headings ensures that users with assistive technology can also enjoy a similar skimming experience. 
+By incorporating semantic HTML elements, you're also enhancing the keyboard-friendliness of your web content. Semantic elements naturally support keyboard navigation and add keyboard focus to clickable elements, allowing users who rely on keyboards to smoothly traverse your content, whether it's links, buttons, or headings. By just using the semantic elements, you save yourself a lot of time trying to replicate the same keyboard focus and navigation. 
 
 ## Activity
 ### Comparison: Exploring the Good and Not-So-Good
-First we'll look at a bad example. Open a new tab and search for any news site. If you don't feel like finding your own, here's [NBC News](https://www.nbcnews.com/). Right click on the page and select inspect (or use F12), then navigate to the lighthouse tab. Double check that the settings include an accessibility report and that you're testing "Desktop" if that's applicable. Begin the assessment by selecting the "Analyze page load" button. Once it loads, scroll to the accessibility section and take note of the errors. Do you see any of the issues we've talked about so far? Do they have good heading structure? Alt text? Link text? Semantic elements? Color contrast?
+First we'll look at a bad example. Open a new tab and search for any news site. If you don't want to find your own, here's [NBC News](https://www.nbcnews.com/). Right click on the page and select inspect (or use F12), then navigate to the lighthouse tab. Double check that the settings include an accessibility report and that you're testing "Desktop" if that's applicable. Begin the assessment by selecting the "Analyze page load" button. Once it loads, scroll to the accessibility section and take note of the errors. Do you see any of the issues we've talked about so far? Do they have good heading structure? Alt text? Link text? Semantic elements? Color contrast?
 
 Now let's look at a good example of web accessibility. [WebAIM](https://webaim.org/) is a reputable source for web accessibility resources and is known for its high accessibility standards. Use the Lighthouse tool like before to evaluate the accessibility of the WebAIM website.
 
