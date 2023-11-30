@@ -5,13 +5,11 @@ time: 60 minutes
 ---
 - - - 
 ## Introduction
-<!-- simpler definition -->
+<!-- find simpler definition -->
 The BYU-I Accessibility Office's definition of accessibility, found on their [Digital Accessibility Hub: Getting Started](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/Getting-Started.aspx) page, is 
 > "The practice of ensuring equally effective and equally integrated functionality, interaction with, and access to digital content for all users with substantially equivalent ease of use."
 
 You may be wondering, why do I need to worry about accessibility? Web accessibility doesn't just help people with disabilities. It often results in a better overall user experience. Designing for accessibility means creating clear and well-organized content, which benefits all users, not just those with disabilities. Accessible websites also tend to have better SEO. Search engines prioritize websites that are user-friendly and provide a positive experience for all visitors. And if that's not enough, many countries, including the United States with the Americans with Disabilities Act (ADA), have laws requiring accessibility for digital content. Non-compliance can lead to legal issues and discrimination claims. 
-
-<!-- Transition here? -->
 
 What does accessibility look like for a website? Well, at BYU-Idaho we start with this [HTML Checklist](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/HTML.aspx), created by the Accessibility Services office. If you can answer "yes" to all of the questions, then your website is probably accessible. Go ahead and take a look at the questions on that page. Eventually, you'll need to know how to do all of those things in order to make an accessible website.
 
@@ -39,8 +37,6 @@ There are six heading levels in HTML. If more than six heading levels are needed
 When closing sub-sections, you can skip up to a higher level, but when adding a new sub-section, you should never skip a level (e.g., heading 4 may proceed heading 2, but heading 2 should never directly proceed heading 4).
 
 #### Incorrect Heading Structure Example
-<!-- idk how to do the wrong example in markdown with a list -->
-<!-- preformatted text -->
 <pre>
  &#x2022; H1
  &#x2022; H1
@@ -70,8 +66,6 @@ When closing sub-sections, you can skip up to a higher level, but when adding a 
 
 ## 02 Link Text
 When you're adding links to your website, the text you use for those links should be meaningful. Instead of generic phrases like "click here", use words that tell people what they'll find when they click. Imagine someone coming across your link without the surrounding text. Would they still understand where the link goes?
-
-<!-- Do I need to explain these examples and the answer dropdowns? -->
 
 ### Link Text Example 1:
 [Here](https://webaim.org/intro/) is a great resource for getting started with web accessibility.
@@ -142,16 +136,13 @@ Alt text goes in the alt attribute of an image tag.
 ```html
 <img src="" alt="">
 ```
-<!-- image tag example here -->
-<!-- figure out how to do that emphasis thing on special terms for "alt" attribute -->
 
-Now, let's talk about decorative images. These are the ones that don't really convey important information. For these, you can use empty alt text (alt=""). This tells assistive technology to skip these images.
+Now, let's talk about decorative images. These are the ones that don't really convey important information. For these, you can use empty alt text `alt=""`. This tells assistive technology to skip these images.
 
 On the flip side, there are images that serve a specific function, like buttons or icons. For these, the alt text should describe that function. For example, a logo that takes you to the home page should have alt text that says "Home". It shouldn't describe the logo. Alt text for images that are links should follow the same rules as the link text section.
 
 Pay attention to the purpose and context of the image. These may change the way a description is written and where the description is provided. The same image can have different alt text depending on its context. 
 
-<!-- Add in a few examples from the POET tool? -->
 Use the [POET Training Tool](https://poet.diagramcenter.org/) to practice when and how to write alt text.
 
 ## 05 Semantic Elements
