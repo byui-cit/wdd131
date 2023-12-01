@@ -10,7 +10,7 @@ tags: [
 
 ## Prepare
 
-Using [ChatGPT](https://chat.openai.com), [Bard](https://bard.google.com), or [Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx) explore the following concepts:
+Using [ChatGPT](https://chat.openai.com), [Bard](https://bard.google.com), or [Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx) explore the following topics:
 
 - Web Accessibility: "What is Web Accessibility?", "How can I make accessible web pages?" "How can I find out how accessible a website is?", "How are these applied for the web?"
 - Design Principles : "What are the principles of graphic design?" or "Can you give an example of a design process for a website?"

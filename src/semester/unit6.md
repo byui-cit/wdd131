@@ -6,10 +6,6 @@ tags: [design basics,
 			]
 ---
 
-## Prepare
-
-- [??](#)
-
 ## Ponder
 
 - [More Practice with Fetch](#)

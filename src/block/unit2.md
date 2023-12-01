@@ -13,7 +13,7 @@ tags: [
 
 ## Prepare
 
-Using [ChatGPT](https://chat.openai.com), [Bard](https://bard.google.com), or [Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx) explore the following concepts:
+Using [ChatGPT](https://chat.openai.com), [Bard](https://bard.google.com), or [Bing Chat](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx) explore the following topics:
 
 - Responsive Web Design: "What is responsive web design?", "How are css media queries used in responsive design?"
 - Debugging Javascript: "What are techniques for debugging Javascript code?", "How can I use breakpoints in the browser?"
