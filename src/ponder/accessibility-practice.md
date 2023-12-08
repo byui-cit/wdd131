@@ -5,9 +5,8 @@ time: 60 minutes
 ---
 - - - 
 ## Introduction
-<!-- find simpler definition -->
-The BYU-I Accessibility Office's definition of accessibility, found on their [Digital Accessibility Hub: Getting Started](https://webmailbyui.sharepoint.com/sites/digitalaccessibilityhub/SitePages/Getting-Started.aspx) page, is 
-> "The practice of ensuring equally effective and equally integrated functionality, interaction with, and access to digital content for all users with substantially equivalent ease of use."
+Definition of web accessibility:
+> "Accessibility is the inclusive practice of eliminating barriers for people with disabilities, ensuring equal access to information and functionality on websites."
 
 You may be wondering, why do I need to worry about accessibility? Web accessibility doesn't just help people with disabilities. It often results in a better overall user experience. Designing for accessibility means creating clear and well-organized content, which benefits all users, not just those with disabilities. Accessible websites also tend to have better SEO. Search engines prioritize websites that are user-friendly and provide a positive experience for all visitors. And if that's not enough, many countries, including the United States with the Americans with Disabilities Act (ADA), have laws requiring accessibility for digital content. Non-compliance can lead to legal issues and discrimination claims. 
 
@@ -98,14 +97,29 @@ A **link** takes you to a new page. A **button** does an action on the current p
 ### Contrast
 Sufficient contrast should be present between text and background (4.5:1). With large text or adjacent important visual elements (informational images, graphics, etc.) contrast should be at least 3:1. Logos, incidental icons, and decorative elements have no required contrast ratio. Use a color contrast checker to find these numbers.
 
-<!-- instructions for greyscale on mac and windows -->
-Keep in mind that some color combinations may be difficult to differentiate between for some colorblindness or visual impairments. You may find it helpful to test your digital content in greyscale to verify color is not the only means used to communicate information and that contrast is sufficient. 
+Keep in mind that some color combinations may be difficult to differentiate between for some colorblindness or visual impairments. You may find it helpful to test your digital content in grayscale to verify color is not the only means used to communicate information and that contrast is sufficient.
+
+### Changing Your Screen to grayscale
+
+#### Mac Instructions
+1. Open settings
+2. Accessibility
+3. Display
+4. Scroll to "Color Filters"
+5. Toggle on color filters and make sure the filter type is "Grayscale"
+
+#### Windows Instructions
+1. Windows button 
+2. Settings
+3. Accessibility
+4. Color Filters
+5. Toggle Grayscale
 
 ### Fonts
 <!-- example fonts - chatgpt example fonts -->
 <!-- large and small size, decorative -->
 <!-- concept, example format -->
-- The choice of typefaces and fonts significantly affects text readability on websites.
+The choice of typefaces and fonts significantly affects text readability on websites.
 - Users often scan text in patterns, and interruptions can hinder comprehension.
 - To enhance readability, use simple and familiar fonts, avoid complexity, and limit font variations.
 - Adequate spacing, contrast between text and background, and font size are crucial for accessibility.
@@ -162,14 +176,22 @@ By incorporating semantic HTML elements, you're also enhancing the keyboard-frie
 <!-- write what it is in mac and windows so they can search the settings, maybe link to a site for each one that has keyboard shortcuts -->
 <!-- just to show how it works -->
 ### Screen reader
+Using a screen reader puts yourself in the shoes of users with visual impairments. It helps you catch and fix accessibility issues, making your websites more user-friendly for everyone. Plus, it's a cool way to expand your skills and create websites that work well for a diverse audience. If you want to try it, here are the instructions for Mac and Windows.
+#### Mac Instructions
+1. Open settings
+2. Accessibility
+3. Voice Over
+4. Toggle on
+#### Windows Instructions
 
 ## Activity
 ### Comparison: Exploring the Good and Not-So-Good
-<!-- screen reader test on both -->
 <!-- test NBC news screen reader to make sure it's bad -->
 First we'll look at a bad example. Open a new tab and search for any news site. If you don't want to find your own, here's [NBC News](https://www.nbcnews.com/). Right click on the page and select inspect (or use F12), then navigate to the lighthouse tab. Double check that the settings include an accessibility report and that you're testing "Desktop" if that's applicable. Begin the assessment by selecting the "Analyze page load" button. Once it loads, scroll to the accessibility section and take note of the errors. Do you see any of the issues we've talked about so far? Do they have good heading structure? Alt text? Link text? Semantic elements? Color contrast?
 
-Now let's look at a good example of web accessibility. [WebAIM](https://webaim.org/) is a reputable source for web accessibility resources and is known for its high accessibility standards. Use the Lighthouse tool like before to evaluate the accessibility of the WebAIM website.
+For both of these examples, you can try using your computer's built-in screen reader and see how it goes.
+
+Now let's look at a good example of web accessibility. [WebAIM](https://webaim.org/) is a reputable source for web accessibility resources and is known for its high accessibility standards. Use the Lighthouse tool like before to evaluate the accessibility of the WebAIM website
 
 ### Practice
 The second part of the activity focuses on hands-on practice. Pick a past website project, such as your WDD130 final project or any other site you've created. Run the Lighthouse tool on your chosen project and check its accessibility score. The goal is to have a lighthouse score of at least 95%. 
