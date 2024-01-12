@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Macondo&display=swap');
 
 :root {
 	--primary-color: #1b98e0;
@@ -6,7 +6,7 @@
 	--text-dark: #333;
 	--text-light: #ebebeb;
 	--primary-font: Arial, Helvetica, sans-serif;
-	--secondary-font: 'Amatic SC';
+	--secondary-font: 'Macondo';
 }
 
 * {

@@ -9,4 +9,4 @@ tags: [design basics,
 ## Prove
 
 - [Personal Project Plan](../../prove/personal-site-plan)
-- [Complete Personal Project](../../prove/personal-site-complete.html)
+- [Complete Personal Project](../../prove/personal-site-complete)

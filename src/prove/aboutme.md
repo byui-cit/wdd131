@@ -361,7 +361,7 @@ todayElement.textContent = weekday[day];
               After verifying that your page updated, submit the URL to your
               page in Ilearn. The URL will look something like this:
               <kbd>https://githubusername.github.io/wdd130/aboutme</kbd>. Make
-              sure to replace "githubusername" with YOUR actual github username
+              sure to replace "githubusername" with *your* actual github username
               :)
             </p>
 

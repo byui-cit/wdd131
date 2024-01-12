@@ -199,7 +199,7 @@ href="https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gi
 After verifying that your page updated, submit the URL to your
 page in Ilearn. The URL will look something like this:
 <kbd>https://githubusername.github.io/wdd130/apod</kbd>. Make sure
-to replace "githubusername" with YOUR actual github username :)
+to replace "githubusername" with *your* actual github username :)
 </p>
 
 <!-- END STEP -->

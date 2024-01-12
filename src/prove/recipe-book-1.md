@@ -15,17 +15,19 @@ Begin by reviewing the provided wireframes and mockup below to see what the webp
 ![Recipe Book mockup small](/assets/images/recipe-book-mockup-sm.webp)
 ![Recipe Book mockup large](/assets/images/recipe-book-mockup-lg.webp)
 
-Create a new folder to hold this project called <kbd>recipes</kbd>. Then create an html file: <kbd>index.html</kbd>,a javascript file: <kbd>recipes.js</kbd> and a css file: <kbd>recipes.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript.
+Create a new folder to hold this project called <kbd>recipes</kbd>. Then create an html file: <kbd>index.html</kbd>, two javascript files: <kbd>recipes.mjs</kbd> and <kbd>main.js</kbd>, and a css file: <kbd>recipes.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript. (Add `main.js` in the script element)
 
-One last setup item. We need to download this file: [recipes.js](https://wdd131.netlify.app/examples/recipes/recipes.js), and add it to the directory for this project.
+We also need some images for the recipes. Download the [recipe images](/examples/recipes/images.zip) and add them to your project folder.
+
+One last setup item. We need to copy and paste the contents of this file: [recipes.js](https://wdd131.netlify.app/examples/recipes/recipes.mjs), into the  `recipes.mjs` file you created earlier.
 
 Make sure to add a new link to the site <kbd>/index.html</kbd> file as well!
 
 ## **02** Write the HTML
 
-Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the title of the site. In the `images` folder that you downloaded earlier you will notice a file called `recipe-book.png` Use this in the title.
+Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the logo and name of the site. In the `images` folder that you downloaded earlier you will notice a file called `recipe-book.png`. Use this in the title.
 
-We are using some icons from a site called Flaticon. We are free to use them, but the license require some attribution in return.  This site asks that we add this link `<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>` Somewhere on the page. Let's put it in the footer.
+We are using some icons from a site called Flaticon. We are free to use them, but the license require some attribution in return.  This site asks that we add this link `<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>` somewhere on the page. Let's put it in the footer.
 
 Along with the attribution for the recipe book icon, we also need some social media icons.  These icons also require attribution. These icons are provided from Iconfinder through an account called AlfredoCreates. The license here is bit more flexible in how we attribute. This time we will do it in a comment. See below for an example:
 
@@ -39,15 +41,15 @@ Along with the attribution for the recipe book icon, we also need some social me
 ```
 > So that attribution link at the bottom of our site is not the most attractive thing. We can minimize the size (And you should. Try 0.6em), so it is less noticiable, but it will still stick out. What if we don't want to attribute? That is easy...be willing to pay to use the resources. All of these sites remove the attribution requirement if you pay :)
 
-Next create the Search form as shown in the wireframe and mockup.
+Next create the search form as shown in the wireframe and mockup.
 
-Finally create the recipe section. You can look in the `recipes.js` file for information. Choose any recipe for now. For the ratings section we want to show filled in and empty stars like the mockup shows. We need to make sure that this very visual rating representation is also accessible. We can use `aria` attributes to do this as seen in the example below.
+Finally, create the recipe section. You can look in the `recipes.js` file for information. Choose any recipe for now. For the ratings section we want to show filled in and empty stars like the mockup shows. We need to make sure that this very visual rating representation is also accessible. We can use `aria` attributes to do this as seen in the example below.
 
 ```markup
 <span
 	class="rating"
 	role="img"
-	aria-label="Rating: 3 out of 5 stars"
+	aria-label="Rating: 4 out of 5 stars"
 >
 	<span aria-hidden="true" class="icon-star">⭐</span>
 	<span aria-hidden="true" class="icon-star">⭐</span>
@@ -59,11 +61,11 @@ Finally create the recipe section. You can look in the `recipes.js` file for inf
 
 The `aria-label` will be read by the screen reader, and the `aria-hidden="true"` on the stars will tell the screen reader to ignore those and they will not be read.
 
-## **03** Begin Styling
+## **03** Begin styling
 
-In the <kbd>recipes.css</kbd> file begin writing the CSS to make your page match the details in the small screen mockup. Below are a few things to note:
+In the <kbd>recipes.css</kbd> file, begin writing the CSS to make your page match the details in the small screen mockup. Below are a few things to note:
 
-- You should resize your browser to be narrow...like a mobile screen. You can do this either through the developer tools, or just by changing the width of your browser
+- You should resize your browser to be narrow, like a mobile screen. You can do this either through the developer tools, or just by changing the width of your browser
 - Start with the global styles.
 - If you want to match the fonts in the mockup you can use `Amatic SC` for the headlines (`@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");`), and `Arial, Helvetica,sans-serif` for the rest.
 - It would be good to add a rule to make our images responsive. We never want an image to be bigger than the space it has available. Something like the following is common:
@@ -90,11 +92,11 @@ In the <kbd>recipes.css</kbd> file begin writing the CSS to make your page match
 >  }
 > ```
 
-Continue adding css until your page matches the small screen mockup above.
+Continue adding CSS until your page matches the small screen mockup above.
 
 ## **04** Make it responsive
 
-At this point your page should look like the narrow mockup above. Now we can add the CSS to make our page responsive to larger screens sizes as well. We will need a `@media` query or two to check for the increasing size of the window...and will make changes at certain sizes or breakpoints as they are often called.
+At this point your page should look like the narrow mockup above. Now we can add the CSS to make our page responsive to larger screens sizes as well. We will need to use `@media` queries to check for the increasing size of the window. The queries will make changes at certain sizes (breakpoints as they are often called).
 
 Begin by widening your browser window. Watch what happens to the page. At a certain point you will notice that the layout starts looking a little stretched out. This will probably be around 600px. Let's add the first breakpoint there. Since we are using Flexbox this time around we can simply add a rule to change the `flex-direction` from column to row.
 
@@ -102,10 +104,10 @@ Next we will keep widening the screen to watch for when the layout starts lookin
 
 ## **05** Check with Lighthouse
 
-Open your page in Chrome, and access the LightHouse tool. Run it for mobile first. How does it look? Read through the errors and recommendations. Make changes to get the scores as close to 100 as you can! You should be able to get to at least 95-96%.
+Open your page in Chrome, and access the Lighthouse tool. Run it for mobile first. How does it look? Read through the errors and recommendations. Make changes to get the scores as close to 100 as you can! You should be able to get to at least 95-96%.
 
-## **05** Commit and push to Github
+## **06** Commit and push to Github
 
-Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-github/ponder2/). Start around step 3.
+Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/recipes</kbd>. Make sure to replace "githubusername" with YOUR actual github username :)
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/recipes</kbd>. Make sure to replace "githubusername" with *your* actual github username :)

@@ -1,4 +1,4 @@
-import recipes from './recipes.js'
+import recipes from './recipes.mjs'
 
 function recipeTemplate(recipe) {
 	return `<figure class="recipe">
