@@ -1,10 +1,11 @@
 :root {
     --textColor: #1A1A1A;
+		--text-dark: var(--textColor);
     --primaryColor: #006EB6;
     --focusColor: #7b2d26;
     --backgroundColor: #ffffff;
 		--header-background: #006EB6;
-  --callout-background-color: #006db6a4;
+  --callout-background-color: #006db6a0;
   --linkColor: #006EB6;
   --linkVisited: #561E4C;
   --codeColor: #1e6685;
@@ -21,6 +22,7 @@
     :root:not([data-user-color-scheme]) {
         --backgroundColor: #1A1A1A;
         --textColor: #eeeeee;
+
         --primaryColor: #006EB6;
 				// --callout-background-color: #888;
 				--linkVisited: #915686;
