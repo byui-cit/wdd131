@@ -1,5 +1,5 @@
 ---
-title: Unit Five - Flexbox, Performance, and Modules
+title: Unit Five - Flexbox and Performance
 summary: This unit will introduce CSS Flexbox as another tool for building webpage layouts. We will also learn how to further organize our code with ES Modules.
 tags: [es modules,
 			seo,
@@ -10,16 +10,14 @@ tags: [es modules,
 
 ## Prepare
 
-- [Flexbox](#)
-= [Lighthouse tool?](#)
-- [SEO](#)
-- [ES modules](https://byui-cit.github.io/learning-modules/modules/js/fetch-basics/prepare1/)
+[Week 9 Exploration](../../prepare/unit5a)
+[Week 10 Exploration](../../prepare/unit5b)
 
 ## Ponder
 
-- [Reading a Siteplan](#)
-- [Layout practice: Flexbox](#)
-- [Sorting and Filtering](https://byui-cit.github.io/learning-modules/modules/js/fetch-basics/ponder1/)
+- Layout practice: Flexbox: Go to these [Flexbox exercises](https://codepen.io/matkat/pen/gWGqJz) and follow the instructions.
+- Complete the exercises at [Flexbox Froggy](https://flexboxfroggy.com)
+- [Sorting and Filtering](https://byui-cit.github.io/learning-modules/modules/js/sorting-filtering/ponder1/)
 
 ## Prove
 

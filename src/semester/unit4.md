@@ -10,15 +10,12 @@ tags: [forms,
 
 ## Prepare
 
-- [HTML Forms](#)
-- [Styling forms](#)
-- [Representing data](https://byui-cit.github.io/learning-modules/modules/js/objects/prepare1/)
-- [Introduction to libraries with ES Modules](https://byui-cit.github.io/learning-modules/modules/js/organizing-modules/prepare1/)
-- [JavaScript Modules: From IIFEs to CommonJS to ES6 Modules](https://ui.dev/javascript-modules-iifes-commonjs-esmodules/)
+[Week 7 Exploration](../../prepare/unit4a)
+[Week 8 Exploration](../../prepare/unit4b)
 
 ## Ponder
 
-- [Working with Forms](#)
+- [Working with Forms](https://byui-cit.github.io/learning-modules/modules/js/forms/ponder1/)
 - [Practice with Objects](https://byui-cit.github.io/learning-modules/modules/js/objects/ponder1/)
 - [Practice with ES Modules](https://byui-cit.github.io/learning-modules/modules/js/organizing-modules/ponder1/)
 

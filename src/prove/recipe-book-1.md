@@ -19,7 +19,7 @@ Create a new folder to hold this project called <kbd>recipes</kbd>. Then create 
 
 We also need some images for the recipes. Download the [recipe images](/examples/recipes/images.zip) and add them to your project folder.
 
-One last setup item. We need to copy and paste the contents of this file: [recipes.js](https://wdd131.netlify.app/examples/recipes/recipes.mjs), into the  `recipes.mjs` file you created earlier.
+One last setup item. We need to copy and paste the contents of this file: [recipes.mjs](https://wdd131.netlify.app/examples/recipes/recipes.mjs), into the  `recipes.mjs` file you created earlier.
 
 Make sure to add a new link to the site <kbd>/index.html</kbd> file as well!
 
@@ -67,7 +67,8 @@ In the <kbd>recipes.css</kbd> file, begin writing the CSS to make your page matc
 
 - You should resize your browser to be narrow, like a mobile screen. You can do this either through the developer tools, or just by changing the width of your browser
 - Start with the global styles.
-- If you want to match the fonts in the mockup you can use `Amatic SC` for the headlines (`@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");`), and `Arial, Helvetica,sans-serif` for the rest.
+- The font used for the headlines is called `Amatic SC` and can be found on [Google fonts](https://fonts.google.com/). However if you look closely at the font you should notice that it breaks a couple of our accessibility rules for fonts. Choose another font that you think has a similar feel, but is better for accessibility.
+- You can use `Arial, Helvetica,sans-serif` for the rest of the fonts.
 - It would be good to add a rule to make our images responsive. We never want an image to be bigger than the space it has available. Something like the following is common:
 
   ```css

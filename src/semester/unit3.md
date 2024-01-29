@@ -10,11 +10,8 @@ tags: [
 
 ## Prepare
 
-- [WebAIM: Introduction to Web Accessibility](https://webaim.org/intro/)
-- [Design Principles](https://byui-cit.github.io/learning-modules/modules/design/design-basics/prepare1/)
-- [JS Array Methods](https://byui-cit.github.io/learning-modules/modules/js/array-methods/prepare1/)
-- [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions): Stop at the section "Scope and the function stack"
-- [Introduction to JS functions](https://byui-cit.github.io/learning-modules/modules/js/organizing-functions/prepare1/)
+[Week 5 Exploration](../../prepare/unit3a)
+[Week 6 Exploration](../../prepare/unit3b)
 
 ## Ponder
 

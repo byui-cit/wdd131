@@ -8,7 +8,9 @@ time: 15 minutes
 
 Begin by opening up a command prompt for your operating system. The easiest way to do this would be to open VS Code and open a terminal (ctrl + ~). Enter the following:
 
-```bash git```
+```bash
+ git
+```
 
 You should see some instructions as a result. If you see an error then follow [these git installation instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder1/)
 
@@ -36,7 +38,7 @@ You are encouraged throughout the semester as things are added to style this pag
 
 Save your work, commit your changes, and push them to Github.
 
-Open [github.com](https://github.com) in your browser and login. Find the new `wdd131` repository that we just created and click on it. Goto Settings, then scroll down until you see the Pages section. Click on that. Find the section that mentions Branches.  There should be a drop down that says "none" and a save button. Switch the dropdown to "main" and click save.
+Open [github.com](https://github.com) in your browser and login. Find the new `wdd131` repository that we just created and click on it. Goto Settings, then scroll down until you see the `Pages` section. Click on that. Find the section that mentions Branches.  There should be a drop down that says "none" and a save button. Switch the dropdown to "main" and click save.
 
 It might take a couple of minutes, but you should see a URL appear right under the title: "Github Pages". You might need to refresh the page.  Copy this link. This will be the URL that you will access your site through, and will be used to turn in your work.
 

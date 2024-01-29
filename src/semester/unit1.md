@@ -16,12 +16,10 @@ tags: [
 - [HTML Introduction](https://byui-cit.github.io/learning-modules/modules/html/html-intro/)
 - [CSS Introduction](https://byui-cit.github.io/learning-modules/modules/css/css-intro/)
 
-### Read
+### Explore
 
-- [Javascript Introduction](https://byui-cit.github.io/learning-modules/modules/js/introduction/prepare1/)
-- [MDN Variables](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#variables) (Read the section on Variables)
-- [Understanding Javascript Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/prepare1/)
-- [Manipulating Documents](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents): Read though the section "Getting useful information from the Window object"
+[Week1 Exploration](../../prepare/unit1a)
+[Week2 Exploration](../../prepare/unit1b)
 
 ## Ponder
 
