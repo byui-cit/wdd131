@@ -39,7 +39,7 @@ Next write the HTML you will need to display all of the content from the wirefra
 >
 > - Meta Charset Attribute
 > - Title Element
-> - Viewport Meta Element: **new** for this week!
+> - Viewport Meta Element
 > - Meta Description Element: Short description of the site
 > - Meta Author Element
 > - Link reference to your CSS file.

@@ -103,12 +103,41 @@ Begin by widening your browser window. Watch what happens to the page. At a cert
 
 Next we will keep widening the screen to watch for when the layout starts looking off again. The next point shuold be somewhere around 960px. Wider than this and the page looks too stretched out. Set this as the widest our layout can grow with another media query.
 
-## **05** Check with Lighthouse
+## **05** Add Social Media Meta information
+
+You should have done some exploration this week about Social Media Meta tags. We should add that to our website so people can share our content on their social media platforms. Here's an example of the recommended tags:
+
+```html
+<meta property="og:title" content="Page Title">
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Page Description">
+<meta property="og:image" content="URL to an image">
+<meta property="og:url" content="URL of the page">
+<meta name="twitter:card" content="summary_large_image">
+```
+
+Add those to the `head` of the document, then change the values to reflect the content of the page. You can see a list of valid types on the [https://ogp.me/#types](open graph website).
+
+## **06** Check with Lighthouse
 
 Open your page in Chrome, and access the Lighthouse tool. Run it for mobile first. How does it look? Read through the errors and recommendations. Make changes to get the scores as close to 100 as you can! You should be able to get to at least 95-96%.
 
-## **06** Commit and push to Github
+## **07** Commit and push to Github
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/recipes</kbd>. Make sure to replace "githubusername" with *your* actual github username :)
+> Remember your metadata! This week we have another new addition.
+>
+> - Meta Charset Attribute
+> - Title Element
+> - Viewport Meta Element
+> - Meta Description Element: Short description of the site
+> - Meta Author Element
+> - Favicon link
+> - Link reference to your CSS file.
+> - Social Media Meta: **New**
+> - Script Element linking to a Javascript file (When using Javascript)
+>
+> For more information see: [MDN: What's in the Head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: `https://githubusername.github.io/wdd131/recipes`. Make sure to replace "githubusername" with *your* actual github username :)

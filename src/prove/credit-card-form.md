@@ -121,9 +121,32 @@ You can accomplish a lot with some well placed
 </p>
 </details>
 
-## **03** Commit and push to Github
+## **03** Add a Favicon
+
+Part of your exploration this week was on Favicons. Apply what you learned by adding a favicon to this page. You can easily create a custom one.
+
+1. Open up the [https://pixlr.com/editor/](Pixlr editor). (If you have another editor you like you can use that as well)
+2. Click "Create new", switch to the Web tab and select "Icon 32"
+3. Select the Text tool and click on the image (You may find this easier if you zoom in to make it bigger) Set the font size to about 18-20 and enter "131" (or your initials if you would like). Center the text and change the color to something you like.
+4. Save your image in the `creditcard` directory as `favicon.png`
+5. Add the `link` to your HTML file to use your new favicon
+
+## **04** Commit and push to Github
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
+
+> Remember your metadata! This week we have another new addition.
+>
+> - Meta Charset Attribute
+> - Title Element
+> - Viewport Meta Element
+> - Meta Description Element: Short description of the site
+> - Meta Author Element
+> - Favicon link: **New**
+> - Link reference to your CSS file.
+> - Script Element linking to a Javascript file (When using Javascript)
+>
+> For more information see: [MDN: What's in the Head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 
 After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: `https://githubusername.github.io/wdd131/creditcard`. Make sure to replace "githubusername" with *your* actual github username :)
 

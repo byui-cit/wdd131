@@ -104,4 +104,17 @@ Then in the `register.js` file we will need to `import` our templates. Check you
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
+> Remember your metadata! This week we have another new addition.
+>
+> - Meta Charset Attribute
+> - Title Element
+> - Viewport Meta Element
+> - Meta Description Element: Short description of the site
+> - Meta Author Element
+> - Favicon link: **New**
+> - Link reference to your CSS file.
+> - Script Element linking to a Javascript file (When using Javascript)
+>
+> For more information see: [MDN: What's in the Head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+
 After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: `https://githubusername.github.io/wdd131/register`. Make sure to replace "githubusername" with *your* actual github username :)
