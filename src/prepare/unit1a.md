@@ -4,7 +4,7 @@ layout: prepare
 time: 30min
 ---
 
-- HTML Meta elements: "What are HTML meta elements?", "Why are they important?", "Which ones shuold always be included?"
+- HTML Meta elements: "What are HTML meta elements?", "Why are they important?", "Which ones should always be included?"
 - CSS Selectors: "What are CSS selectors?", "Can you give an example of a CSS selector?", "How do I use multiple selectors in one rule?", "What is a CSS combinator?", "What is a pseudo-class in CSS?"
 - Javascript basics: "What is Javascript?"
 
