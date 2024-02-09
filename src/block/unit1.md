@@ -25,7 +25,7 @@ tags: [
 - [Course Setup](../../prove/setup/)
 - [CSS Diner](https://flukeout.github.io)  CSS review and practice
 - [Running Javascript](https://byui-cit.github.io/learning-modules/modules/js/introduction/ponder1/)
-- [Practice with JS Variables](https://byui-cit.github.io/learning-modules/modules/js/variables/ponder1/)
+- [Practice with JS Variables](https://codepen.io/matkat/pen/LYjRjzm)
 - [Practice with the DOM](https://byui-cit.github.io/learning-modules/modules/js/dom-basics/ponder1/)
 
 ## Prove

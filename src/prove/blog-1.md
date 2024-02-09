@@ -153,7 +153,49 @@ Once you have the header styled (and matching the mockup as closely as you can) 
 
 Take a moment to review the accessibility of the work you have done so far. Run the Lighthouse tool against your page. How did you do?  Aim for a score on accessibility of at least 95%.
 
-## **06** Commit and push your work.
+## **06** More Accessibility
+
+Often when thinking about Accessibility we can tend to focus only on the visually impaired and forget that there are other disabilities that can interfere with efforts to browse our sites. We also sometimes rely too heavily on tools like Lighthouse. For example, some people are unable to use a mouse to navigate. They often browse entirely through their keyboard. Open up the [W3Schools](https://www.w3schools.com/) site and then start hitting `tab`.
+
+>If you are on a Mac you should do this in Chrome or Firefox. In Safari this is not enabled by default. You can enable it through `Safari Settings > Advanced > Accessibility`.
+
+Imagine that you were trying to get to the "Learn HTML" link in the HTML section. How many times did you have to hit `tab` to get there?  This is a definite problem, and yet Lighthouse didn't flag it for us.  Unfortunately it can't check everything ☹️
+
+Try again with the [WebAim](https://webaim.org/) site. Notice that after your first `tab` a hidden link pops up...`skip to main content`. If you hit `enter` while focusing that link it will bypass the rest of the navigation. We should add something similar to our blog.
+
+In the `header` of the page add a link:
+
+```html
+<div class="skiptocontent">
+  <a href="#maincontent">skip to main content</a>
+</div>
+```
+
+Also add an id to the `main` element of `maincontent`. Next add the CSS necessary to hide the link from the viewer until the link is focused.
+
+>A common way to do this is to use `position:absolute` to slide it off the screen...you could try something like `top:-40px;`.
+>Then we can take advantage of the [:focus pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus). To set the `top:0` when the element is focused.
+
+See below if you get stuck.
+
+<details>
+<summary>Solution</summary>
+
+```css
+.skiptocontent a {
+	/* set the element to absolute positioning */
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+	/* Change the background and color to something that stands out */
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
+}
+```
+
+</details>
+
+## **07** Commit and push your work.
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
