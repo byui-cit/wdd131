@@ -1,30 +1,33 @@
 :root {
-    --textColor: #1A1A1A;
-		--text-dark: var(--textColor);
-    --primaryColor: #006EB6;
-    --focusColor: #7b2d26;
-    --backgroundColor: #ffffff;
-		--header-background: #006EB6;
-  --callout-background-color: #006db6a0;
-  --linkColor: #006EB6;
-  --linkVisited: #561E4C;
-  --codeColor: #1e6685;
-  --kbdColor: #1e6685;
-  --textLight: #f0f3f5;
+	--textColor: #1a1a1a;
+	--text-dark: var(--textColor);
+	// --primaryColor: #006eb6;
+	--primaryColor: #004fa8;
+	--focusColor: #7b2d26;
+	--backgroundColor: #ffffff;
+	--header-background: #004fa8;
+	--callout-background-color: #006db650;
+	--linkColor: #004fa8;
+	--linkVisited: #561e4c;
+	--codeColor: #004fa8;
+	--kbdColor: #004fa8;
+	--textLight: #f0f3f5;
 }
 
 // Very basic support for a dark color scheme
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-mode: 'dark';
-    }
+	:root {
+		--color-mode: 'dark';
+	}
 
-    :root:not([data-user-color-scheme]) {
-        --backgroundColor: #1A1A1A;
-        --textColor: #eeeeee;
+	:root:not([data-user-color-scheme]) {
+		--backgroundColor: #1a1a1a;
+		--textColor: #eeeeee;
+		--codeColor: #a8e3fc;
+		--linkColor: #a8e3fc;
 
-        --primaryColor: #006EB6;
-				// --callout-background-color: #888;
-				--linkVisited: #915686;
-    }
+		--primaryColor: #004fa8;
+		// --callout-background-color: #888;
+		--linkVisited: #a8709e;
+	}
 }

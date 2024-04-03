@@ -28,7 +28,7 @@ That is a pretty good list. Let's get started.
 A dropdown list is a great way to offer a user a limited list of
 choices. In HTML we create a dropdown with a [select element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
 
-Add a 'select` element to the top of your HTML page. It should have two options: light and dark. Use those for both the value and the display of the option. You will probably need to review the link above for help with the syntax.
+Add a `select` element to the top of your HTML page. It should have two options: light and dark. Use those for both the value and the display of the option. You will probably need to review the link above for help with the syntax.
 
 ```markup
 <option value="dark">Dark</option>
@@ -41,8 +41,7 @@ Add the class of `dark` to the `body` element. We do this now for development pu
 We will start the dark theme with the following changes: set the background color to `#333`, a nice dark grey. Then set the font color to white.
 
 Take a look at the page with those changes. What do you notice?
-The subtitle we made blue last week. The blue on black is a little hard to read. This could actually be an [accessibility]https://developer.mozilla.org/en-US/docs/Web/Accessibility)
-issue. Making a site accessible mean that we do everything we can to make it work for everyone, including people who may have some sort of disability like vision issues.
+The subtitle we made blue last week. The blue on black is a little hard to read. This could actually be an [accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility) issue. Making a site accessible means that we do everything we can to make it work for everyone, including people who may have some sort of disability like vision issues.
 
 Accessibility guidelines recommend that the contrast between colors be at least 4 for smaller text. We can easily check this in Chrome or Firefox. These instructions will assume you are using Chrome.
 
@@ -67,7 +66,7 @@ color: somecolor;
 
 </details>
 
-The last thing that we need to look at is the logo. It is the same blue that the subtitle was, and so has the same contrast issues. If we look at another [part of the branding guide](https://www.byui.edu/branding/logos) we can see the rules for using the BYUI logo. Notice that when the logo is used on a dark background they recommend white text. Below you will find a new image with white text.
+The last thing that we need to look at is the logo. It is the same blue that the subtitle was, and so has the same contrast issues. If we look at another part of the [BYUI branding guide](https://www.byui.edu/branding/logos) we can see the rules for using the BYUI logo. Notice that when the logo is used on a dark background they recommend white text. Below you will find a new image with white text.
 
 <img
 src="/assets/images/byui-logo_white.png"
@@ -75,9 +74,9 @@ alt="byui logo white"
 style="background-color: #333"
 />
 
-We won't change the image right now, but will do it later withJavascript...but you should grab that image and save it as part of your project.
+We won't change the image right now, but will do it later with Javascript. You should grab that image and save it as part of your project.
 
-Once you have the dark theme looking how you would like then remove the `dark` class from the `body`
+Once you have the dark theme looking how you would like then remove the `dark` class from the `body`.
 
 ## **04** Write the Javascript
 
@@ -85,7 +84,7 @@ Create a file called `mission.js` in the mission folder. Add a `script` element 
 
 If we review the list of steps above we can see the following is left:
 
-1. With JavaScript select the 'select` element out of the DOM.
+1. With JavaScript select the `select` element out of the DOM.
 2. Add an event listener to the selected element. We should listen for a `change` event.
 3. Create a function called `changeTheme` that will get called by the event listener when the select option is changed. That function should do the following:
     1. Check to see what option is currently selected on our theme selector.
