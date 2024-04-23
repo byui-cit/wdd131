@@ -18,6 +18,10 @@ You should see some instructions as a result. If you see an error then follow [t
 
 Create a new folder to hold the work you will perform this semester called `wdd131`. Open that folder in VS Code.
 
+For a longer review of setting up our project in Github you can review the [Github Setup instructions](https://byui-wdd.github.io/wdd130/activities/w02-hosting-setup-online.html/) from the previous class. Note that wherever you see `wdd130`, you should replace it with `wdd131`.
+
+A shorter version of the instructions is below:
+
 Click on the Source Control Icon on the sidebar in VS Code. You should see a button that says "Publish to Github". Click it. VS Code may ask you to login to your Github account, then it will ask whether you want a public or private repository. Pick Public.
 
 ## **03** Create the course Home page

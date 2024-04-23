@@ -1,6 +1,6 @@
 ---
 title: Cool Pics - part 2
-description: This activity will have you continue the page built in part 1. We will use Javascript to make the menu button hide and show the menu on small screens. We will also use Javascript to create a image viewer when we click on the gallery images.
+description: This activity will have you continue the page built in part 1. We will use Javascript to make the menu button hide and show the menu on small screens. We will also use Javascript to create an image viewer when we click on the gallery images.
 time: 2 hours
 ---
 
@@ -10,7 +10,7 @@ In Part 1 we added a button for the menu that currently does not work. We should
 
 - Hide menu items by default
 - Add an event listener to the menu button to listen for a click event.
-- When the button is clicked show the menu if it is hidden, hide the men if it is shown.
+- When the button is clicked show the menu if it is hidden, hide the menu if it is shown.
 
 The list did not end up very long! Try on your own to write the code to accomplish those steps. Review the code below after you are done (or if you get stuck)
 
@@ -24,7 +24,7 @@ Here are a few tips:
 	}
 	```
 
-	You can then add that to the list of links in the nav.
+    You can then add that to the list of links in the nav.
 - You can add and remove classes to an element using the `classList` For example if you had used `document.querySelector` to grab the menu button you could do something like this: `menuButton.classList.add('hide')`. This would add a class called `hide` to the element.  We can `add`, `remove`, and `toggle` classes.
 - Remember that we can tell the browser we want it to care about an event using `addEventListener`. It follows the form: `element.addEventListener("event", handlerFunction)`
 
@@ -89,7 +89,7 @@ Start by building the HTML and CSS for that modal.
   </div>
   ```
 
-- We will style it for the small screen first. Set the position of this element to `fixed`. Then make it take up the whole screen (Hint: `top:0;left:0;bottom:0;right:0;). Also set the background to be a semi-transparent grey (rgba(0, 0, 0, 0.75);)
+- We will style it for the small screen first. Set the position of this element to `fixed`. Then make it take up the whole screen (Hint: `top:0;left:0;bottom:0;right:0;`). Also set the background to be a semi-transparent grey (rgba(0, 0, 0, 0.75);)
 - It would be nice to center the image in the space. We can easily do this with Grid.
 - You will probably need to change the font color so we can see our X.
 - To make the X stay above the image we can again use grid to place it in the first row and the image in the second row.
@@ -106,7 +106,8 @@ For the large screen version of our modal let's not let the modal take up the wh
 
 The next step is to add the Javascript to make the modal show when an image in the gallery is clicked.
 
-- Copy the html for the modal and add it to a function in the js file called `viewerTemplate`. This function should accept two arguments: the url for the image, and the alt text. Insert those into the correct places in the template and return it from the function. Make sure to remove the html for the viewer from the index.html file!
+- Copy the html for the modal from the index.html file, and add it to a function called `viewerTemplate` in the js file. This function should accept two arguments: the path for the image, and the alt text. Insert those into the correct places in the template and return it from the function.
+    *Make sure to remove the html for the viewer from the index.html file!*
 
 <details>
 <summary>viewer template function</summary>
@@ -122,16 +123,15 @@ function viewerTemplate(pic, alt) {
 
 </details>
 
-- Add an event listener to the `.gallery`. It should watch for a click, and use a function called `viewHandler` as the event handler function.
-- You can use the following as a guide for writing the viewHandler function
+- Add a function called `viewHandler`. You can use the following as a guide for writing the viewHandler function
 
 ```javascript
 function viewHandler(event) {
-	// get the element that was clicked on from event.target
+	// create a variable to hold the element that was clicked on from event.target
 
 	// get the src attribute from that element and 'split' it on the "-"
 
-	// construct the new URL by adding "-full.jpeg" to the first part of the array from the previous step
+	// construct the new image file name by adding "-full.jpeg" to the first part of the array from the previous step
 
 	// insert the viewerTemplate into the top of the body element
 	// (element.insertAdjacentHTML("afterbegin", htmltoinsert))
@@ -141,13 +141,14 @@ function viewHandler(event) {
 }
 ```
 
+- Add an event listener to the `.gallery` section of your HTML page. It should watch for a click, and use a function called `viewHandler` as the event handler function.
 - Write the `closeViewer` function that will remove the viewer div from the DOM when clicked.
 
 <details>
 <summary>Emergency use only!</summary>
 
 - The element that was clicked on will always be found in `event.target` in the event handler function.
-- All strings in Javascript have a method on them called `split` You just need to pass in the character you want to split the string up in as an argument.
+- All strings in Javascript have a method on them called `split`. You just need to pass in the character you want to split the string up in as an argument. If you need more guidance on using this, do a quick search or ask an AI...
 - element.insertAdjacentHTML is an extremely useful upgrade to just modifying `innerHTML` directly on an element. We have 4 options when using it: beforebegin, afterbegin, beforeend, and afterend. See [MDN: insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) to learn more.
 - All elements have a `remove` method that can be used to remove the element from the DOM
 

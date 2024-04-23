@@ -14,7 +14,7 @@ Begin by reviewing the provided mockup below to see what the webpage will look l
 
 Create a new folder to hold this project called <kbd>coolpics</kbd>. Then create an html file: <kbd>index.html</kbd>,a javascript file: <kbd>coolpics.js</kbd> and a css file: <kbd>coolpics.css</kbd>. Add the HTML you need to have a valid new page as well as a <kbd>link</kbd> element for your CSS and a <kbd>script</kbd> for your Javascript.
 
-> Remember In the Mission Statement assignment when you were asked to add more metadata to the `head` of your document? We should add that list to all of our pages moving forward. Here is it again with one new addition:
+> Remember in the Mission Statement assignment when you were asked to add more metadata to the `head` of your document? We should add that list to all of our pages moving forward. Here is it again with one new addition:
 >
 > - Meta Charset Attribute
 > - Title Element
@@ -28,18 +28,18 @@ Create a new folder to hold this project called <kbd>coolpics</kbd>. Then create
 
 Finally download these two images and add them to the project: [norris-sm.jpeg](https://wdd131.netlify.app/examples/cool-pics/norris-sm.jpeg) and [norris-full.jpeg](https://wdd131.netlify.app/examples/cool-pics/norris-full.jpeg)
 
-Make sure to add a new link to the site `/index.html` file as well!
+Make sure to add a new link to this assignment to the site `/index.html` file as well! (ie `<a href="coolpics/index.html">Coolpics</a>`)
 
 ## **02** Write the HTML
 
 Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the title of the site and navigation. You can copy/paste the following for the title `Cool Pics 📷`.
 
-In the footer we will provide a simple copyright message: <kbd>&copy;2023 Not a real site :)</kbd>.
+In the footer we will provide a simple copyright message: <kbd>&copy;2023 Not a real site 😀</kbd>.
 
-For the `main` element add the headline as shown on the mockup, then add a `section` element to contain our gallary.  We will just use some placeholder images. An example of how your images can look is below
+For the `main` element add the headline as shown on the mockup, then add a `section` element to contain our gallery. You should put a `class="gallery"` on that section.  We will just use some placeholder images. An example of how your images can look is below
 
 ```markup
-<figure>
+<figure>  
 	<img src="norris-sm.jpeg" alt="picture">
 </figure>
 ```
@@ -59,7 +59,7 @@ In the <kbd>coolpics.css</kbd> file begin writing the CSS to make your page matc
   }
   ```
 
-- You can use the provided image `norris-sm.jpeg` for the gallery. The design calls for square images, but the provided one is not square! You can set the height and width of the image to be 250px. You will notice that the image becomes distorted however. We don't want this...we would rather have a crop. You can get that by adding the folllowing rule to your CSS for the image: `object-fit: cover;`
+- You can use the provided image `norris-sm.jpeg` for the gallery. The design calls for square images, but the provided one is not square! You can set the height and width of the image to be 250px. You will notice that the image becomes distorted however. We don't want this...we would rather have a crop. You can get that by adding the following rule to your CSS for the image: `object-fit: cover;`
 - The "Menu" you see will eventually be used as a button to hide and show the navigation links on mobile. In preparation for that make it a `button` element...then you will need to use CSS to make it look not like a button.
 - If you want to use your own colors feel free, otherwise continue for the colors used in the mockup.
 
