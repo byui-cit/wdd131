@@ -22,7 +22,6 @@ For a longer review of setting up our project in Github you can review the [Gith
 
 A shorter version of the instructions is below:
 
-Click on the Source Control Icon on the sidebar in VS Code. You should see a button that says "Publish to Github". Click it. VS Code may ask you to login to your Github account, then it will ask whether you want a public or private repository. Pick Public.
 
 ## **03** Create the course Home page
 
@@ -37,6 +36,8 @@ In the `wdd131` project folder that you should still have open in VS Code create
 Add `header`, `main`, and `footer` elements. In the 'header' add a title that says something like "[name]: WDD 131 portfolio". Replace [name] with your name :)
 
 You are encouraged throughout the semester as things are added to style this page.
+
+Click on the Source Control Icon on the sidebar in VS Code. You should see a button that says "Publish to Github". Click it. VS Code may ask you to login to your Github account, then it will ask whether you want a public or private repository. Pick Public.
 
 ## **04** Enable Github Pages
 
