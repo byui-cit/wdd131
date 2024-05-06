@@ -106,7 +106,7 @@ function changeTheme() {
 // make sure the logo src is the blue logo.
 }
 // add eventlistener to the themeSelector element here. Use the changeTheme function as the event handler function.
-themeSelector.addEventListener('click', changeTheme);
+themeSelector.addEventListener('change', changeTheme);
 ```
 
 ## **05** Commit and push your work.

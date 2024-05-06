@@ -50,7 +50,7 @@ In the <kbd>coolpics.css</kbd> file begin writing the CSS to make your page matc
 
 - You should resize your browser to be narrow...like a mobile screen. You can do this either through the developer tools, or just by changing the width of your browser
 - Start with the global styles. What font should be used for the body copy and headlines?  What color(s) should links be? Should the base font size be increased? (yes!) Set the color for the header and footer, etc.
-- If you want to match the fonts in the mockup you can use `Mooli` for the headlines (`@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");`), and `Arial, Helvetica,sans-serif` for the rest.
+- If you want to match the fonts in the mockup you can use `Mooli` for the headlines (`@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");`), and `Arial, Helvetica,sans-serif` for the rest.
 - It would be good to add a rule to make our images responsive. We never want an image to be bigger than the space it has available. Something like the following is common:
 
   ```css
