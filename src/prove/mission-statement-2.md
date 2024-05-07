@@ -94,20 +94,35 @@ If we review the list of steps above we can see the following is left:
 To help you out, below you will find a function that has been started with comments. Use this and complete the task
 
 ```javascript
-const themeSelector = // replace with code to select dropdown element out of the HTML
+const themeSelector = // replace with code to select dropdown element out of the HTML (Hint: document.querySelector)
 function changeTheme() {
-//check to see what the current value of our select is. The current value is conveniently found in themeSelector.value!
+// check to see what the current value of our select is.
+// The current value is conveniently found in themeSelector.value!
 
 // if the value is dark then:
 // add the dark class to the body
-// change the source of the logo to point to the white logo.
+// change the source of the logo img to point to the white logo.
 // otherwise
 // remove the dark class
 // make sure the logo src is the blue logo.
 }
-// add eventlistener to the themeSelector element here. Use the changeTheme function as the event handler function.
+
+// add an event listener to the themeSelector element here.
+// Use the changeTheme function as the event handler function.
 themeSelector.addEventListener('change', changeTheme);
 ```
+
+> The code above includes 2 things that you may not have seen before. First is an example of a function in Javascript. Functions are a way to group a set of instructions together and then call them when you need them.
+>
+> You can see that the function definition starts with the `function` keyword. Then you have the name of the function. Then you will see an opening and closing parentheses. In this case they are empty, but in other cases we can use them to pass parameters containing important data that the function can use. Finally you have the code that the function will run inside of `{ }`. You can call/execute/run the function by typing its name followed by parentheses.
+> ```javascript
+>    changeTheme();
+> ```
+> Second is an example of an event listener. Event listeners are a way to listen for events (click, touch, scroll, change, etc) that happen on the page and then run a function to do something when that event happens.
+>
+> You may have noticed that even though it was mentioned above that a function is executed by calling it with parentheses, when we used it in the eventListener we omitted the parentheses! We will learn a lot more about event listeners including the reason why the parentheses were not included next week.
+>
+> We will be using event listeners and functions a lot in this course.
 
 ## **05** Commit and push your work.
 
