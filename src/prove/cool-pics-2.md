@@ -53,7 +53,7 @@ One of the events that we can watch for is a `resize` event. This event fires on
 - Add an event listener to `window` to watch for a `resize` event. Call the `handleResize` function when a resize happens.
 - Call the `handleResize` function immediately when the page loads as well.
 
-As always make your attempt to solve this before looking at the solution.
+As always make your attempt to solve this before looking at the solution. Also if you do use the code below re-type it into your code...do not copy/paste it.  Make sure that you understand what is going on as well. You could ask in Teams, or run the code past an AI for an explanation.
 
 <details>
 <summary>Handling a window resize</summary>
@@ -84,18 +84,22 @@ Start by building the HTML and CSS for that modal.
 
   ```markup
   <div class="viewer">
-    <span class="close-viewer">X</span>
+    <button class="close-viewer">X</button>
     <img src="image.jpeg" alt="alt description">
   </div>
   ```
 
-- We will style it for the small screen first. Set the position of this element to `fixed`. Then make it take up the whole screen (Hint: `top:0;left:0;bottom:0;right:0;`). Also set the background to be a semi-transparent grey (rgba(0, 0, 0, 0.75);)
+- We will style it for the small screen first. Set the position of this element to `fixed`. Then make it take up the whole screen (Hint: `top:0;left:0;bottom:0;right:0;`). Also set the background to be a semi-transparent grey (`rgba(0, 0, 0, 0.75);`)
 - It would be nice to center the image in the space. We can easily do this with Grid.
 - You will probably need to change the font color so we can see our X.
 - To make the X stay above the image we can again use grid to place it in the first row and the image in the second row.
 - If we let the image expand to the whole width of the screen we might end up with images that are too tall sometimes. Let's set the `max-height` of the image to 100%;
 
-Once you are done with your styling the modal should look something like this:
+> Notice that the example above is using `<button>` instead of `<span>`. Why do you think this is?  The X is going to trigger an action when it is clicked. That is exactly what buttons are for in HTML. We could have just made it a link, but a screen reader expects buttons to be used for actions, and links to be used for navigation. Buttons are also more semantic, and are easier to style.
+>
+> You should style the button to match the mockup.
+
+Once you are done with your styling the modal should look something like this (You won't have an image showing yet...we will do that soon.):
 
 ![Cool Pics small modal example](/assets/images/cool-pics-modal-sm.jpeg)
 
@@ -115,7 +119,7 @@ The next step is to add the Javascript to make the modal show when an image in t
 ```javascript
 function viewerTemplate(pic, alt) {
   return `<div class="viewer">
-    <span class="close-viewer">X</span>
+    <button class="close-viewer">X</button>
     <img src="${pic}" alt="${alt}">
     </div>`;
 }
