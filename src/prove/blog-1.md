@@ -31,7 +31,7 @@ After reviewing the wireframe spend some time thinking about what parts of the l
 
 ## **02** Write the HTML
 
-Add a new directory called `blog` to your WDD131 directory. Add new `index.html` and `blog.css` files inside that new directory. Then open the main `index.html` for your site (the one at the root of the WDD131 directory) and add a link to this new page (`blog/`). Finally download this [javascript file](/examples/blog/articles.js) and add it to the `blog/` directory with the others. This file contains information you can use as you write the HTML about a couple of books.
+Add a new directory called `blog` to your wdd131 directory. Add new `index.html` and `blog.css` files inside that new directory. Then open the main `index.html` for your site (the one at the root of the wdd131 directory) and add a link to this new page (`blog/`). Finally download this [javascript file](/examples/blog/articles.js) and add it to the `blog/` directory with the others. This file contains information you can use as you write the HTML about a couple of books.
 
 Next write the HTML you will need to display all of the content from the wireframe. Make sure to keep semantics in mind. As well, make sure to use elements to group related parts of the page together.
 
@@ -45,7 +45,7 @@ Next write the HTML you will need to display all of the content from the wirefra
 > - Link reference to your CSS file.
 > - Script Element linking to a Javascript file (When using Javascript)
 
-> When thinking about semantics, you should think in terms of the parts of the page ie: lists, paragraphs, headlines, headers, footers, etc. For example the navigation is made up of a list of links right? So it would make sense to use the HTML element that matches (`<li>`)
+> When thinking about semantics, you should think in terms of the parts of the page: lists, paragraphs, headlines, headers, footers, etc. For example the navigation is made up of a list of links right? So it would make sense to use the HTML element that matches (`<li>`)
 
 >Also keep in mind the accessibility of your page when choosing your elements. For example what should you use for the article date? Visually the date is larger than the surrounding text which makes it stand out. How can we do something similar for a person using a screen reader?</p>
 
@@ -98,7 +98,7 @@ To create the grid for the navigation we need to look at the HTML structure we u
 <details>
 <summary>Solution</summary>
 
-Container would be the `ul`, the items would be the `li`. For a selector you could use something like `nav > ul`, OR you could add a class directly to the UL and use that class for a selector. IE `&lt;ul class="main-nav"&gt;`, and then `.main-nav` as the selector.
+Container would be the `ul`, the items would be the `li`. For a selector you could use something like `nav > ul`, OR you could add a class directly to the UL and use that class for a selector: `<ul class="main-nav">`, and then `.main-nav` as the selector.
 
 You may need to adjust this based on how close your HTML for the navigation is to the code above.
 
