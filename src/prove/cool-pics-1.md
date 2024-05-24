@@ -36,7 +36,7 @@ Next add the HTML to display the content. Create the elements that will house th
 
 In the footer we will provide a simple copyright message: <kbd>&copy;2023 Not a real site 😀</kbd>.
 
-For the `main` element add the headline as shown on the mockup, then add a `section` element to contain our gallery. You should put a `class="gallery"` on that section.  We will just use some placeholder images. An example of how your images can look is below
+For the `main` element add the headline as shown on the mockup, then add a `section` element to contain our gallery. You should put a `class="gallery"` on that section.  We will just use some placeholder images. We will need 9 images, each image should be in it's own `figure`. An example of how your images can look is below.
 
 ```markup
 <figure>  

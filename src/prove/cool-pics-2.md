@@ -94,6 +94,7 @@ Start by building the HTML and CSS for that modal.
 - You will probably need to change the font color so we can see our X.
 - To make the X stay above the image we can again use grid to place it in the first row and the image in the second row.
 - If we let the image expand to the whole width of the screen we might end up with images that are too tall sometimes. Let's set the `max-height` of the image to 100%;
+- If you have issues with the viewer showing up behind other things...you can add a `z-index: 10`; to fix it.
 
 > Notice that the example above is using `<button>` instead of `<span>`. Why do you think this is?  The X is going to trigger an action when it is clicked. That is exactly what buttons are for in HTML. We could have just made it a link, but a screen reader expects buttons to be used for actions, and links to be used for navigation. Buttons are also more semantic, and are easier to style.
 >

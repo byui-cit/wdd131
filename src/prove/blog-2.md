@@ -39,14 +39,11 @@ Using the list above as a guide, write the CSS to style the articles.
 
 If this were a real blog site it would be nice if we didn't have to change the index page each time we added a new post. Many sites operate in this way. In order to do this we need to dynamically generate the HTML markup for the articles instead of having it be hard coded in the HTML file.
 
-Last week you were instructed to download a `articles.js` file and add it to the
-`blog/` directory. That file contains a variable called `articles` that contains an array of information about articles. We can use that array to build out the HTML markup we
-need to dynamically build the list of articles on our page.
+Last week you were instructed to download a `blog.js` file and add it to the `blog/` directory. That file contains a variable called `articles` that contains an array of information about articles. We can use that array to build out the HTML markup we need to dynamically build the list of articles on our page.
 
 >On a real site the articles data would be pulled stored in a database and requested as needed. In order to keep ours simple we will just store it in a variable locally.
 
-To proceed, connect your new JS file to the `index.html` file in that directory by adding a
-`script` element. Don't forget to `defer`!
+To proceed, connect your new JS file to the `index.html` file in that directory by adding a `script` element. Don't forget to `defer`!
 
 Just like we did above with the CSS, it would be good to come up with a list of steps to follow in order to solve our problem.
 
@@ -55,7 +52,7 @@ Just like we did above with the CSS, it would be good to come up with a list of 
     1. Create a new `article` element. If you have any classes on your hard coded articles in your index.html, add those to your new element in Javascript.
     2. Create a template literal string and store it in a variable. The contents of this string should be a copy/paste of the contents of one of your current `articles` from the HTML file.
     3. Everywhere in the copy/pasted HTML where there is information specific to this post we should replace it with the data from the current article. (${item.date})
-    4. Set the `innerHTML` of the new article to thetemplate literal string we just built.
+    4. Set the `innerHTML` of the new article to the template literal string we just built.
 - Append the new article to the output element so it will show on the page.
 
 Create one or more functions that will be responsible to build and output the HTML necessary to display the list of articles.
@@ -68,8 +65,25 @@ Create one or more functions that will be responsible to build and output the HT
 
 Once you have the Javascript working and it is adding the articles dynamically you might notice that you have two copies of each article on your page. Go into the `index.html` file and remove the HTML that produces the articles. We don't need it anymore.
 
-For fun let's see how easy it would be to add an new article. In the `articles.js` file copy one of the objects that contains the information about our books. Paste it below the last
-item in the array (don't forget to add a comma). Then you can change the title to one of your favorite books. Change the other items if you want. It would look something like below:
+For fun let's see how easy it would be to add an new article. In the `blog.js` file, look at the `articles` variable. Copy the following JS object with information about another book into the array that contains information about our books. Paste it below the last item in the array (don't forget to add a comma).
+
+```javascript
+{
+id: 3,
+title: "Belgariad Book One: Pawn of Prophecy",
+date: "Feb 12, 2022",
+description:
+"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his "Aunt Pol" and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+imgSrc:
+"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+imgAlt: "Book cover for Pawn of Prophecy",
+ages: "12-16",
+genre: "Fantasy",
+stars: "⭐⭐⭐⭐⭐"
+}
+```
+
+ The final array would look something like below:
 
 ```javascript
 const articles = [

@@ -31,7 +31,7 @@ After reviewing the wireframe spend some time thinking about what parts of the l
 
 ## **02** Write the HTML
 
-Add a new directory called `blog` to your wdd131 directory. Add new `index.html` and `blog.css` files inside that new directory. Then open the main `index.html` for your site (the one at the root of the wdd131 directory) and add a link to this new page (`blog/`). Finally download this [javascript file](/examples/blog/articles.js) and add it to the `blog/` directory with the others. This file contains information you can use as you write the HTML about a couple of books.
+Add a new directory called `blog` to your wdd131 directory. Add new `index.html` and `blog.css` files inside that new directory. Then open the main `index.html` for your site (the one at the root of the wdd131 directory) and add a link to this new page (`blog/`). Finally download this javascript file: [blog.js](/examples/blog/blog.js) and add it to the `blog/` directory with the others. This file contains information you can use as you write the HTML about a couple of books.
 
 Next write the HTML you will need to display all of the content from the wireframe. Make sure to keep semantics in mind. As well, make sure to use elements to group related parts of the page together.
 
