@@ -130,7 +130,7 @@ stars: "⭐⭐⭐⭐⭐"
 
 Save the file and look at your page. You should now have three articles listed!
 
-## **06** Commit and push your work.
+## **04** Commit and push your work.
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
