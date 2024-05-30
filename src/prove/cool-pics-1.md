@@ -6,9 +6,11 @@ time: 2 hours
 
 ## **01** Review the site plan
 
-Begin by reviewing the provided mockup below to see what the webpage will look like on both small screens and large. You can use the indicated colors and fonts or you can choose some of your own.
+Begin by reviewing the provided mockup below to see what the webpage will look like on both small, medium, and large screens. You can use the indicated colors and fonts or you can choose some of your own.
 
 ![CoolPics mockup small](/assets/images/coolpics-mockup-sm.png)
+
+![CoolPics mockup medium](/assets/images/coolpics-mockup-md.webp)
 
 ![CoolPics mockup large](/assets/images/coolpics-mockup-lg.png)
 
