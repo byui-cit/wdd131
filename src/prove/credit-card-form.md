@@ -20,10 +20,8 @@ alt="mockup for the credit card form we will build and style"
 Whenever you start a new project, it is a good idea to list out the steps we will need to follow in order to solve the problem. If we can make our list in small enough steps, each step becomes trivial. That is the goal.
 
 1. Add a new directory to our project called `creditcard`. Add an `index.html` and a stylesheet file. Make sure to add a new link to your main index page for your site to this new page.
-2. Add a `form` to your page. Inside of that form create
-an element to act as a card front and another for the card back. Also add a submit `button`
-3. Using CSS grid place the card front and card back overlapping like the screenshot. Make sure to place the button as well.Do some basic styling on the containers as well...round the
-corners, add a background color, you could even add a `box-shadow` if you wanted. Make sure the back is behind the front. (You can do this either by ordering the HTML elements the right way, or by using `z-index` Higher numbers put things on the top of the stack.)
+2. Add a `form` to your page. Inside of that form create an element to act as a card front and another for the card back. Also add a submit `button`
+3. Using CSS grid place the card front and card back overlapping like the screenshot. Make sure to place the button as well.Do some basic styling on the containers as well...round the corners, add a background color, you could even add a `box-shadow` if you wanted. Make sure the back is behind the front. (You can do this either by ordering the HTML elements the right way, or by using `z-index` Higher numbers put things on the top of the stack.)
 4. Begin adding the form elements to the card front and card back. Remember that a good form input should always have a `label` to go along with it! A `placeholder` would also be a good idea. You can use the code below to display the small orange card image.
 	```markup
 	<img
