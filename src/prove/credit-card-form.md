@@ -20,9 +20,9 @@ alt="mockup for the credit card form we will build and style"
 Whenever you start a new project, it is a good idea to list out the steps we will need to follow in order to solve the problem. If we can make our list in small enough steps, each step becomes trivial. That is the goal.
 
 1. Add a new directory to our project called `creditcard`. Add an `index.html` and a stylesheet file. Make sure to add a new link to your main index page for your site to this new page.
-2. Add a `form` to your page. Inside of that form create an element to act as a card front and another for the card back. Also add a submit `button`
-3. Using CSS grid place the card front and card back overlapping like the screenshot. Make sure to place the button as well.Do some basic styling on the containers as well...round the corners, add a background color, you could even add a `box-shadow` if you wanted. Make sure the back is behind the front. (You can do this either by ordering the HTML elements the right way, or by using `z-index` Higher numbers put things on the top of the stack.)
-4. Begin adding the form elements to the card front and card back. Remember that a good form input should always have a `label` to go along with it! A `placeholder` would also be a good idea. You can use the code below to display the small orange card image.
+2. Add a `form` to your page. Inside of that form create an element to act as a card front and another for the card back. Also add a submit `button`.
+3. Using CSS grid place the card front and card back overlapping like the screenshot. Make sure to place the button as well. Do some basic styling on the containers as well...round the corners, add a background color, you could even add a `box-shadow` if you wanted. Make sure the back is behind the front. (You can do this either by ordering the HTML elements the right way, or by using `z-index` Higher numbers put things on the top of the stack.)
+4. Begin adding the form elements to the card front and card back. Remember that a good form input should always have a `label` to go along with it! A `placeholder` attribute would also be a good idea. You can use the code below to display the small orange card image.
 	```markup
 	<img
 	class="card-image"
@@ -53,7 +53,7 @@ Getting your HTML structure correct can make a big difference in how smoothly yo
 <details>
 <summary>Main Grid</summary>
 
-If you are having a hard time getting the main grid to work (this is the one that places the card front, card back, and submit button) take a look at the screenshot below for some hints. (the wide darker lines indicate that a `gap` was used.
+If you are having a hard time getting the main grid to work (this is the one that places the card front, card back, and submit button) take a look at the screenshot below for some hints. (the wide darker lines indicate that a `gap` was used).
 
 <figure>
 <img
@@ -64,13 +64,9 @@ If you are having a hard time getting the main grid to work (this is the one tha
 </details>
 <details>
 <summary>Card Front Grid</summary>
-<p>
-If you are having a hard time getting the card front grid to
-work, take a look at the screenshot below for some hints. (the
-wide darker lines indicate that a `gap` was used)
-Notice as well that there is a space all the way around the
-grid...how does one add space on the inside of an element?
-</p>
+
+If you are having a hard time getting the card front grid to work, take a look at the screenshot below for some hints. (the wide darker lines indicate that a `gap` was used). Notice as well that there is a space all the way around the grid...how does one add space on the inside of an element?
+
 <figure>
 <img
 	src="/assets/images/credit-card-form-front-grid.jpeg"
@@ -80,17 +76,14 @@ grid...how does one add space on the inside of an element?
 </details>
 <details>
 <summary>Card Back Grid</summary>
-<p>
+
 If you are having a hard time getting the card back grid to
 work, take a look at the screenshot below for some hints. Notice
 as well that there is a space on the top and bottom of the
-grid...how does one add space on the inside of an element?
-</p>
-<p>
-To create the dark grey bar on the card back you can just use an
-empty div. Set a `background-color`, and a
-`height`, then position it in your grid.
-</p>
+grid...how do you add space on the inside of an element?
+
+To create the dark grey bar on the card back you can just use an empty div. Set a `background-color`, and a `height`, then position it in your grid.
+
 <figure>
 <img
 	src="/assets/images/credit-card-form-back-grid.jpeg"
@@ -100,23 +93,13 @@ empty div. Set a `background-color`, and a
 </details>
 <details>
 <summary>Spacing and alignment.</summary>
-<p>
+
 Because we are using CSS Grid we have access to all of it's
 alignment properties. These include
-<code
-	>justify-content, justify-items, align-items, align-self,
-	justify-self</code
->. You can review this
-<a
-	href="https://css-tricks.com/snippets/css/complete-guide-grid/"
-	>CSS Grid Cheatsheet</a
->
-for a refresher about what each does if you need it.
-</p>
-<p>
-You can accomplish a lot with some well placed
-`margin` and `padding` as well!
-</p>
+`justify-content, justify-items, align-items, align-self, justify-self`. You can review this [CSS Grid Cheatsheet](https://css-tricks.com/snippets/css/complete-guide-grid/) for a refresher about what each does if you need it.
+
+You can accomplish a lot with some well placed `margin` and `padding` as well!
+
 </details>
 
 ## **03** Add a Favicon
