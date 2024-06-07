@@ -1,12 +1,12 @@
 ---
-title: Registration Form part 1
+title: Registration Form
 description: This activity will give you a mostly complete, styled form that could be used to register youth for a camp. Our job will be to make the two buttons on the form functional.
 time: 60 minutes
 ---
 
 ## **01** Review the provided HTML/CSS
 
-Create a new folder to hold this project called `register`. Then download the [index.html](../teacher/register/start/form.html) and a css file: [register.css](../teacher/register/start/register.css) and place them in your new folder. Add a link as well to this new page to your root `/index.html` file.
+Create a new folder to hold this project called `register`. Then download the [index.html](/examples/register/start/form.html) (you may need to view source then copy and paste for the HTML) and a CSS file: [register.css](/examples/register/start/register.css) and place them in your new folder. Add a link as well to this new page to your root `/index.html` file.
 
 Begin by reviewing the code that makes up the form and the CSS for the form. Note that there is a lot going on with the CSS. Most of it should look familiar though. The exception might be the section where the radio buttons are styled. There will be several new things in that section that you may not have seen before. Take a look and see if you can figure out what is going on.
 
@@ -21,7 +21,7 @@ As is our habit, let's start by listing out the steps we would need to follow to
 1. When the page loads set the current number of participants equal to 1
 2. Add an event listener to the button. When it is clicked the following should happen:
     1. Add one to the count of participants.
-    2. Create a copy of the HTML that makes up the participant section of the form. (`<section class="participant1">`
+    2. Create a copy of the HTML that makes up the participant section of the form. (`<section class="participant1">`)
     3. Note that `id` attributes are supposed to be unique. If we create an exact copy of that section then we will have duplicate ids. So the next step would be to update the `id`s of each element with something to make it unique.
     4. Insert the new HTML into the `participants` fieldset. Ideally we would want to insert the new participant after the last participant and before the Add button.
 
