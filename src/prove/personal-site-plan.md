@@ -74,7 +74,7 @@ Describe how you will use Javascript to add dynamic elements to your site.
 ## **05** Logo
 
 Choose a logo images for your personal site. You can create one if you'd like. Sites like
-[Canva.com](https://www.canva.com/create/logos/) or [Adobe Logo Maker](https://express.adobe.com/express-apps/logomaker/) or [freelogodesign.org](https://www.freelogodesign.org/) can be options if you don't make yours from scratch.
+[Canva.com](https://www.canva.com/create/logos/) or [Adobe Logo Maker](https://www.adobe.com/express/create/logo) or [freelogodesign.org](https://www.freelogodesign.org/) can be options if you don't make yours from scratch.
 
 ## **06** Colors and Fonts
 

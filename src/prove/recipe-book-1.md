@@ -21,7 +21,7 @@ We also need some images for the recipes. Download the [recipe images](/examples
 
 One last setup item. We need to copy and paste the contents of this file: [recipes.mjs](https://wdd131.netlify.app/examples/recipes/recipes.mjs), into the  `recipes.mjs` file you created earlier.
 
-Make sure to add a new link to the site <kbd>/index.html</kbd> file as well!
+Make sure to add a new link to the site `/index.html` file as well!
 
 ## **02** Write the HTML
 
@@ -43,7 +43,7 @@ Along with the attribution for the recipe book icon, we also need some social me
 
 Next create the search form as shown in the wireframe and mockup.
 
-Finally, create the recipe section. You can look in the `recipes.js` file for information. Choose any recipe for now. For the ratings section we want to show filled in and empty stars like the mockup shows. We need to make sure that this very visual rating representation is also accessible. We can use `aria` attributes to do this as seen in the example below.
+Finally, create the recipe section. You can look in the `recipes.mjs` file for information. Choose any recipe for now. For the ratings section we want to show filled in and empty stars like the mockup shows. We need to make sure that this very visual rating representation is also accessible. We can use `aria` attributes to do this as seen in the example below.
 
 ```markup
 <span
@@ -105,7 +105,7 @@ Next we will keep widening the screen to watch for when the layout starts lookin
 
 ## **05** Add Social Media Meta information
 
-You should have done some exploration this week about Social Media Meta tags. We should add that to our website so people can share our content on their social media platforms. Here's an example of the recommended tags:
+You should have done some exploration this week about Social Media Meta tags. These meta tags give social media sites the information they need to display a nice summary of our site for easy posting to social media.  We should add some tags to our website so people can share our content on their social media platforms. Here's an example of the recommended tags:
 
 ```html
 <meta property="og:title" content="Page Title">
@@ -116,7 +116,11 @@ You should have done some exploration this week about Social Media Meta tags. We
 <meta name="twitter:card" content="summary_large_image">
 ```
 
-Add those to the `head` of the document, then change the values to reflect the content of the page. You can see a list of valid types on the [https://ogp.me/#types](open graph website).
+>`og` stands for Open Graph, a format developed by Facebook that many social media sites understand now. There are a lot of options for properties to include. The list above is considered a good starting point for most sites.
+
+Add those to the `head` of the document, then change the values to reflect the content of the page. You can see a list of valid types on the [open graph website](https://ogp.me/#types).
+
+> You may be wondering what to put in for all those values? Well, you can use the same values you used for the `title`and `description` meta tags on your page for the equivalent og tags. The image should be something that represents your page. In this case a picture of food would probably work. This is the image  that will be shown when someone shares your page on social media. The `url`  should be the URL of the page you are on. The `twitter:card` is a Twitter specific tag that tells Twitter how to display the page when someone shares it. The `summary_large_image` tells Twitter to use the image you provided as the main image for the page.
 
 ## **06** Check with Lighthouse
 

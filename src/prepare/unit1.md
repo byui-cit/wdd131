@@ -18,7 +18,7 @@ Questions that might be helpful could be:
 - Are there any other ways to do this?
 - Can you give me more information on...?
 
-### Step 1
+<!-- ### Step 1
 
 We will use the first topic: Javascript basics as an example to illustrate. Here are some questions I used in a conversation with AI to explore the topic:
 
@@ -28,11 +28,11 @@ We will use the first topic: Javascript basics as an example to illustrate. Here
 - How can I use Javascript in a webpage?
 - Tell me more about async and defer (async and defer were mentioned in the last response)
 - Can you give me a specific example?
-- What are common problems that can occur when using Javascript?
+- What are common problems that can occur when using Javascript? -->
 
-### Step 2
+### Prompt
 
-For a more interactive and guided experience you could provide the AI with a prompt that sets up some ground rules. We can do things like ask it to not just provide the solution or answer we are looking for, but instead ask us questions leading us to the knowledge we seek.
+For a more interactive and guided experience you can provide the AI with a prompt that sets up some ground rules. We can do things like ask it to not just provide the solution or answer we are looking for, but instead ask us questions leading us to the knowledge we seek.
 
 After you have asked a few questions about the topics above, try entering the following into the Chat prompt and use it to review and solidify your understanding:
 
