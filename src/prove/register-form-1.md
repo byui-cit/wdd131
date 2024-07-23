@@ -83,7 +83,7 @@ feeElements = [...feeElements];
     and then in the Javascript do something like
     `element.classlist.add('hide')`
 
-## **06** Refactor
+<!-- ## **06** Refactor
 
 Refactoring is a process that developers often do once they get their code working, but when they see places where the code could be improved. The improvements often are to make the code less brittle, or easier to maintain.
 
@@ -98,9 +98,9 @@ Then in the `register.js` file we will need to `import` our templates. Check you
 >
 >```markup
 ><script src="register.js" type="module">
->```
+>``` -->
 
-## **07** Commit and push to Github
+## **06** Commit and push to Github
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 

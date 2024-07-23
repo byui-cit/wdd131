@@ -30,5 +30,5 @@ tags: [
 
 ## Prove
 
-[Mission Statement I](../../prove/mission-statement-1)
-[Mission Statement II](../../prove/mission-statement-2)
+[Mission Statement](../../prove/mission-statement)
+<!-- [Mission Statement II](../../prove/mission-statement-2) -->

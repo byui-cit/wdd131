@@ -15,8 +15,8 @@ tags: [es modules,
 
 ## Ponder
 
-- Layout practice: Flexbox: Go to these [Flexbox exercises](https://codepen.io/matkat/pen/gWGqJz) and follow the instructions.
 - Complete the exercises at [Flexbox Froggy](https://flexboxfroggy.com)
+- [Flexbox practice](https://byui-cit.github.io/learning-modules/modules/css/flexbox/ponder1/)
 - [Sorting and Filtering](https://byui-cit.github.io/learning-modules/modules/js/sorting-filtering/ponder1/)
 
 ## Prove

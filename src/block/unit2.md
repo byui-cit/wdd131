@@ -24,5 +24,4 @@ tags: [
 
 ## Prove
 
-[Cool Pics part 1](../../prove/cool-pics-1)
-[Cool Pics part 2](../../prove/cool-pics-2)
+[Cool Pics](../../prove/cool-pics)

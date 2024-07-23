@@ -21,5 +21,5 @@ tags: [
 
 ## Prove
 
-[Build a Blog part 1](../../prove/blog-1)
-[Build a Blog part 2](../../prove/blog-2)
+[Build a Blog](../../prove/blog)
+
