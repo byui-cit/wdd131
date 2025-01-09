@@ -26,7 +26,7 @@ As soon as your plan has been approved you should begin to work. A listing of th
 >    1. It should show some level of organization: at a minimum it should have more than one function.
 >    2. It should include DOM interaction: select an element, modify it, and listen for and react to events
 >    3. It should show examples of conditional branching
->    4. Each of the following should be used: Objects, ES Modules, Arrays and array method usage (forEach, map, reduce, filter, etc)
+>    4. Each of the following should be used: Objects, Arrays and array method usage (forEach, map, reduce, filter, etc)
 
 ## **02** Complete
 

@@ -1,4 +1,4 @@
-module.exports = {
-    env: process.env.ELEVENTY_ENV,
-    timestamp: new Date()
+export default {
+	env: process.env.ELEVENTY_ENV,
+	timestamp: new Date()
 }

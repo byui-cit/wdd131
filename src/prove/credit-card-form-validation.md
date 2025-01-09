@@ -1,7 +1,7 @@
 ---
 title: Working with Forms, Credit Card Info
 description: This will have you practice several topics from the last few weeks to create and style a credit card submission form.
-time: 60 minutes
+time: 90 minutes
 ---
 
 Our form will be inspired by this [codepen example](https://codepen.io/jadepreis/pen/aZmPBY).
@@ -120,7 +120,7 @@ It is important forms that we make sure the user has entered everything in corre
 2. You should have already added a `required` attribute to each form element, and the browser will stop the submission of the form automatically if any `required` field is empty. We can jump straight to checking for a valid number.
 3. The default behavior for to browser with a form submission is to package up all the data, and send it along to a server. The server address would be specified in the `action` attribute on the form element. Only we didn't set that!  When the browser does not find an `action` it just reloads the page instead. This is going to cause problems for us in this case. Luckily we can stop this behavior. Create a new function in `card.js` called `submitHandler(event)`. On the first line of that add `event.preventDefault();`. this will stop the browser from reloading the page.
 4. Now we can check to see if the number is valid.  One nice thing about `submit` events is that the form that triggered the event will be available in the handler function as `this`. So if the card number input in your form had `name="cardNumber"`, inside the handler function we could reference the value typed into the form with: `this.cardNumber.value`.
-5. The first thing we need to check is to see if any letters were entered into the input. Javascript had a function called [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN) (is Not a Number). It will return `true` if the value passed to it cannot be converted to a number, and `false` if it can.
+5. The first thing we need to check is to see if any letters were entered into the input. Javascript has a function called [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN) (is Not a Number). It will return `true` if the value passed to it cannot be converted to a number, and `false` if it can.
 6. If the value is not a number, we can stop the submission of the form. The easiest way to do this would be to `return false` from the handler function. We should really send back some feedback to the user as well, so they know what they did wrong. See below for an example of how this might look. You will need to add a `p` to your HTML with a class of `errorMsg` for this to work. And you should make sure that the form ID in the querySelector matches your form ID. And update the `this.cardNumber` to whatever name you gave that field in your HTML.
 
 ```javascript

@@ -20,5 +20,5 @@ tags: [forms,
 
 ## Prove
 
-[Credit Card Form](../../prove/credit-card-form)
-[Registration Form](../../prove/register-form-1)
+[Credit Card Form](../../prove/credit-card-form-validation)
+
