@@ -9,7 +9,7 @@ time: 60 minutes
 
 ## Preparation
 
-This activity will walk us through building a simple To-do application that will allow you to add a task, mark a task as completed, and remove a task. It is recommended to review [Event Driven Programmming](../prepare1) before you start.
+This activity will walk us through building a simple To-do application that will allow you to add a task, mark a task as completed, and remove a task. It is recommended to review [Event Driven Programmming](https://byui-cit.github.io/learning-modules/modules/js/dom-events/prepare1/) before you start.
 
 You will need your editor open to create a couple of new files for the following code:
 
