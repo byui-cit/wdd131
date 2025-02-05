@@ -1,5 +1,7 @@
 ---
 title: DOM Events - Ponder
+layout: prove
+time: 60 minutes
 ---
 
 
