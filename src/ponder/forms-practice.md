@@ -157,7 +157,12 @@ The first thing we need to do is to build out our form in HTML. We should also t
 
 1. Open the form-demo.html file you were provided. Review the mockup below and create the form it shows.
 
-![Form mockup](../assets/images/form-demo-mockup.webp)
+<figure>
+<img
+src="/assets/images/form-demo-mockup.webp"
+alt="mockup for the credit card form we will build and style"
+/>
+</figure>
 
 2. Make sure to have a label for each element as well as adding a name and id to each. Finally make each of the form inputs required.
 3. Credit card numbers are always 16 digits. We can use a pattern to make sure the value entered it exactly 16 digits. Add pattern="[0-9]{16}" to the input for the creditcard number
@@ -220,7 +225,7 @@ The first thing we need to do is to build out our form in HTML. We should also t
 </form>
 ```
 
-If you are looking at those <p> tags being used to group up the labels and inputs and wondering why I didn't just use a <div>, it's partly a matter of preference, but partly because of the definition of a p element from MDN: "Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields."
+If you are looking at those `<p>` tags being used to group up the labels and inputs and wondering why I didn't just use a `<div>`, it's partly a matter of preference, but partly because of the definition of a p element from MDN: "Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields."
 
 ```css
 /* form-demo.css */
