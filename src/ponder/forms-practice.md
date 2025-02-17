@@ -159,8 +159,8 @@ The first thing we need to do is to build out our form in HTML. We should also t
 
 <figure>
 <img
-src="/assets/images/form-demo-mockup.webp"
-alt="mockup for the credit card form we will build and style"
+src="/src/assets/images/form-demo-mockup.webp"
+alt="mockup for the form we will build and style"
 />
 </figure>
 
