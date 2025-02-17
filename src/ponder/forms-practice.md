@@ -159,7 +159,7 @@ The first thing we need to do is to build out our form in HTML. We should also t
 
 <figure>
 <img
-src="/src/assets/images/form-demo-mockup.webp"
+src="form-demo-mockup.webp"
 alt="mockup for the form we will build and style"
 />
 </figure>
@@ -264,9 +264,9 @@ Open the form-demo.js file. It contains several incomplete functions. Start with
 
 Here are a few tips:
 
-1. You can add and remove classes to elements through element.classList.add("classname") and element.classList.remove("classname")
-2. required is a bit of a funny attribute since it doesn't have a value. You can actually remove it by doing element.required = false or by using element.removeAttribute("required"). You can add it back with either element.required = true or element.setAttribute("required", "")
-3. Remember that when working with form inputs the stuff typed into the input can be found in element.value
+1. You can add and remove classes to elements through `element.classList.add("classname")` and `element.classList.remove("classname")`
+2. required is a bit of a funny attribute since it doesn't have a value. You can actually remove it by doing `element.required = false`` or by using element.removeAttribute("required")`. You can add it back with either `element.required = true` or `element.setAttribute("required", "")`
+3. Remember that when working with form inputs the stuff typed into the input can be found in `element.value`
 
 One you have finished writing the function, add a change event listener to the paymentMethod form input that will call our togglePaymentDetails function on change.
 
