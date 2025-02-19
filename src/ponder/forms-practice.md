@@ -267,6 +267,7 @@ One you have finished writing the function, add a change event listener to the p
 
 <details>
 <summary>Solution 1</summary>
+
 ```javascript
 // form-demo.js
   
