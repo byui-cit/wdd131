@@ -157,7 +157,7 @@ The first thing we need to do is to build out our form in HTML. We should also t
 
 1. Open the form-demo.html file you were provided. Review the mockup below and create the form it shows.
 
-![mockup for the form we will build and style](form-demo-mockup.webp)
+![mockup for the form we will build and style](form-demo-mockup.png)
 
 2. Make sure to have a label for each element as well as adding a name and id to each. Finally make each of the form inputs required.
 3. Credit card numbers are always 16 digits. We can use a pattern to make sure the value entered it exactly 16 digits. Add pattern="[0-9]{16}" to the input for the creditcard number
