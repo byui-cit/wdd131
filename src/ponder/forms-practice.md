@@ -161,7 +161,7 @@ The first thing we need to do is to build out our form in HTML. We should also t
 <figure>
 <img
 	src="/assets/images/form-demo-mockup.png"
-	alt="book review site Mockup"
+	alt="form Mockup"
 />
 <figcaption>Mockup</figcaption>
 </figure>
