@@ -54,9 +54,10 @@ Paste the code into the `site-plan.css` file in VSCode and save it. Then complet
 >    2. At least one image that relates to the content of the page.
 >    3. Working links to your child page(s).
 >    4. Be laid out and styled according to your site plan wireframes.
->    5. Be visually appealing and easily readable.
->    6. Be valid HTML and CSS
->    7. Score at least 97 on Lighthouse.
+>    5. Be responsive
+>    6. Be visually appealing and easily readable.
+>    7. Be valid HTML and CSS
+>    8. Score at least 96 on Lighthouse on Performance and Accessibility.
 >4. The site should have dynamic elements provided by Javascript, your code should show elements of the following:
 >    1. It should show some level of organization: at a minimum it should have more than one function.
 >    2. It should include DOM interaction: select an element, modify it, and listen for and react to events
