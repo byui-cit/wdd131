@@ -82,7 +82,7 @@ In the `recipes.css` file, begin writing the CSS to make your page match the det
 - There are not a lot of colors in this page, but custom properties are still a good idea to set important style information. Choose a primary and secondary color to use and set them as you see below.
 
 > ```css
->  @import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+>  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 >  :root {
 >  --primary-color: #1B98E0;
 >  --secondary-color: #59c3c3;
