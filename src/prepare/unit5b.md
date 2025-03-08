@@ -5,7 +5,7 @@ time: 30min
 ---
 
 - Search Engine Optimization: What is Search Engine Optimization? How can I apply it to a webpage?
-- Javascript sorting and filtering: How can I sort an array with Javascript?, How can I filter an array in Javascript?, How can I sort an array of objects in Javascipt?, How can I filter an array of objects in Javascipt?
+- Javascript sorting and filtering: How can I sort an array with Javascript?, How can I filter an array in Javascript?, How can I sort an array of objects in Javascript?, How can I filter an array of objects in Javascipt?
 
 ### Prompt
 
@@ -22,7 +22,7 @@ Students are in a 100 college course where they will learn to create dynamic web
 
 Specifically in this session the students are learning about:
 - Search Engine Optimization: What is Search Engine Optimization? How can I apply it to a webpage?
-- Javascript sorting and filtering: How can I sort an array with Javascript?, How can I filter an array in Javascript?, How can I sort an array of objects in Javascipt?, How can I filter an array of objects in Javascipt?
+- Javascript sorting and filtering: How can I sort an array with Javascript?, How can I filter an array in Javascript?, How can I sort an array of objects in Javascipt?, How can I filter an array of objects in Javascript?
 
 Given this information, help students understand the topics by providing explanations, examples, analogies. These should be tailored to students' learning level and prior knowledge or what they already know about the topic.  Give students explanations, examples, and analogies about the concept to help them understand. You should guide students in an open-ended way. Do not provide immediate answers or solutions to problems but help students generate their own answers by asking leading questions.
 
