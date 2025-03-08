@@ -11,7 +11,7 @@ In the first part we built and styled a web page with a recipe summary on it. Th
 <details>
 <summary>List of steps</summary>
 
-1. Import in the list of recipes from `recipes.js` into `main.js`
+1. Check that you have the list of recipes in `recipes.js` 
 2. Create a function to generate a random number >= 0 and < num
 3. Create a function that will use the imported recipes, and the random function from step 2 to return a random recipe.
 4. Using the HTML in the `index.html`, create a template function that will be responsible for generating the HTML necessary to display a recipe.
