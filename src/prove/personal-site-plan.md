@@ -24,9 +24,11 @@ alt="new site-plan.html file screen shot"
 />
 </figure>
 
-Go to [Site Plan Template](/examples/site-plan.html), right-click on the page, and view the source code. (On Chrome it's the pop-up menu option called 'View Page Source'.)
+You have two options for your site plan. One option is to create your own site plan from scratch. You are not required to use a template. For either option you need to provide the following for your site-plan: purpose, audience, dynamic elements used, logo, colors, fonts, content, and wireframes.
 
-Copy **all** the HTML code. You can use Cmd+A or Ctrl+A to select it all quickly, then copy it.
+The other option is to use an existing template by going to [Site Plan Template](/examples/site-plan.html), right-click on the page, and view the source code. (On Chrome it's the pop-up menu option called 'View Page Source'.)
+
+To use the template, copy **all** the HTML code. You can use Cmd+A or Ctrl+A to select it all quickly, then copy it.
 
 Paste the code into your `site-plan.html` page in VSCode and save the file.
 
@@ -41,7 +43,7 @@ alt="new style folder and file screen shot"
 
 Go to: [Site Plan CSS](/examples/site-plan.css) and copy **all** the code.
 
-Paste the code into the `site-plan.css` file in VSCode and save it. Then complete each section.
+Paste the code into the `site-plan.css` file in VSCode and save it. Then complete each section. 
 
 > ### Project Requirements
 >
