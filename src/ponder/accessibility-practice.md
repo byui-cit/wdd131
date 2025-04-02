@@ -194,7 +194,7 @@ Using semantic HTML elements brings inherent accessibility features to your web 
 
 **Defined Roles:** Each element has a specific role, enabling assistive technologies to interpret their purpose accurately. For example, a button element is recognized as something clickable.
 
-Like we talked about earlier with the definition of accessibility, having equivalent effecviveness and ease of use is easier when you use semantic elements. For example, when you open an article, what's your first instinct? Probably skimming through the headings, right? Using semantic headings ensures that users with assistive technology can also enjoy a similar skimming experience.
+Like we talked about earlier with the definition of accessibility, having equivalent effectiveness and ease of use is easier when you use semantic elements. For example, when you open an article, what's your first instinct? Probably skimming through the headings, right? Using semantic headings ensures that users with assistive technology can also enjoy a similar skimming experience.
 
 ### Keyboard accessibility
 
