@@ -1,6 +1,6 @@
 ---
 title: JS Objects - Ponder
-layout: ponder
+layout: prove
 time: 60 minutes
 ---
 
