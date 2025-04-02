@@ -300,4 +300,5 @@ changeEnrollment: function (sectionNum, add = true) {
     }
   }
 ```
+
 </details>
