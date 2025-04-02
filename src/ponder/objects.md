@@ -1,5 +1,5 @@
 ---
-title: JS Objects - Ponder
+title: JS Objects - Pondering
 layout: prove
 time: 60 minutes
 ---
