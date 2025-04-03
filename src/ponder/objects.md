@@ -183,7 +183,7 @@ this will be equal to whatever is on the left side of the dot.
 
 Think about this and an event listener. We could setup the listener like this:
 
-document.querySelector('#enrollStudent`)
+document.querySelector('#enrollStudent')
  .addEventListener('click', function(e) {
   //what would the value of 'this' be inside this function?
 })
