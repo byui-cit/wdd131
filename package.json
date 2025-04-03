@@ -2,7 +2,7 @@
   "name": "wdd131",
   "version": "1.2.0",
   "description": "Content for WDD131",
-	"type":"module",
+  "type": "module",
   "browserslist": [
     "> 0.5%",
     "not IE 11"
@@ -22,30 +22,29 @@
   },
   "author": "Shane T",
   "license": "MIT",
-    "devDependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^6.0.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@11ty/eleventy-plugin-vite": "^5.0.2",
-    "autoprefixer": "^10.4.20",
+    "@11ty/eleventy-plugin-vite": "^6.0.0",
+    "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.6",
     "cssremedy": "^0.1.0-beta.2",
     "del-cli": "^6.0.0",
-    "eslint": "^9.17.0",
+    "eslint": "^9.23.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-promise": "^7.2.1",
     "focus-visible": "^5.2.1",
-    "luxon": "^3.5.0",
+    "luxon": "^3.6.1",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "npm-run-all": "^4.1.5",
     "postcss-nesting": "^13.0.1",
-    "rollup-plugin-critical": "^1.0.14",
-    "sass": "^1.83.1",
-    "vite": "^6.0.7"
-  }
-}
+    "rollup-plugin-critical": "^1.0.15",
+    "sass": "^1.86.2",
+    "vite": "^6.2.5"
+  }}
