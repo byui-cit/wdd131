@@ -1,23 +1,15 @@
 // const markdownIt = require('markdown-it')
 import markdownIt from 'markdown-it'
-// const markdownItAnchor = require('markdown-it-anchor')
 import markdownItAnchor from 'markdown-it-anchor'
-// const EleventyPluginNavigation = require('@11ty/eleventy-navigation')
 import EleventyPluginNavigation from '@11ty/eleventy-navigation'
-// const EleventyPluginRss = require('@11ty/eleventy-plugin-rss')
 import EleventyPluginRss from '@11ty/eleventy-plugin-rss'
-// const EleventyPluginSyntaxhighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 import EleventyPluginSyntaxhighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite'
 
-// const rollupPluginCritical = require('rollup-plugin-critical').default
-import rollupPluginCritical from 'rollup-plugin-critical'
+// import rollupPluginCritical from 'rollup-plugin-critical'
 
-// const filters = require('./utils/filters.js')
 import filters from './utils/filters.js'
-// const transforms = require('./utils/transforms.js')
 import transforms from './utils/transforms.js'
-// const shortcodes = require('./utils/shortcodes.js')
 import shortcodes from './utils/shortcodes.js'
 
 // const { resolve } = require('path')
@@ -59,35 +51,35 @@ export default async function (eleventyConfig) {
 						entryFileNames: 'assets/js/[name].[hash].js'
 					},
 					plugins: [
-						rollupPluginCritical({
-							criticalUrl: './_site/',
-							criticalBase: './_site/',
-							criticalPages: [
-								{ uri: 'index.html', template: 'index' },
-								// { uri: 'units/index.html', template: 'units/index' },
-								{ uri: '404.html', template: '404' }
-							],
-							criticalConfig: {
-								inline: true,
-								dimensions: [
-									{
-										height: 900,
-										width: 375
-									},
-									{
-										height: 720,
-										width: 1280
-									},
-									{
-										height: 1080,
-										width: 1920
-									}
-								],
-								penthouse: {
-									forceInclude: ['.fonts-loaded-1 body', '.fonts-loaded-2 body']
-								}
-							}
-						})
+						// rollupPluginCritical({
+						// 	criticalUrl: './_site/',
+						// 	criticalBase: './_site/',
+						// 	criticalPages: [
+						// 		{ uri: 'index.html', template: 'index' },
+						// 		// { uri: 'units/index.html', template: 'units/index' },
+						// 		{ uri: '404.html', template: '404' }
+						// 	],
+						// 	criticalConfig: {
+						// 		inline: true,
+						// 		dimensions: [
+						// 			{
+						// 				height: 900,
+						// 				width: 375
+						// 			},
+						// 			{
+						// 				height: 720,
+						// 				width: 1280
+						// 			},
+						// 			{
+						// 				height: 1080,
+						// 				width: 1920
+						// 			}
+						// 		],
+						// 		penthouse: {
+						// 			forceInclude: ['.fonts-loaded-1 body', '.fonts-loaded-2 body']
+						// 		}
+						// 	}
+						// })
 					]
 				}
 			}
