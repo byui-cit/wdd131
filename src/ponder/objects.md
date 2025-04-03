@@ -146,6 +146,7 @@ renderSections(aCourse.sections);
 ```
 
 </details>
+
 ## Activity 2
 
 The next part will see us add a method to our object that can be used to modify the object itself. In order to do this we need to understand this.
