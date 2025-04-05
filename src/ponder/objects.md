@@ -21,7 +21,6 @@ You will need your editor open to create a new files for the following code:
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses and sections</title>
     <script src="courses.js" defer></script>
@@ -283,7 +282,7 @@ Take a look at the enrollStudent and dropStudent methods. Notice how much of the
 How could you refactor (change) these methods to have less duplication? How could they be combined into one function? Make that change.
 
 <details>
-<summary>Solution 2</summary>
+<summary>Solution 3</summary>
 
 ```javascript
 changeEnrollment: function (sectionNum, add = true) {
