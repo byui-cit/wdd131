@@ -6,7 +6,7 @@ time: 2 hours
 
 ## **01** Review and plan
 
-Begin by reviewing the provided wireframes and mockup below to see what the webpage will look like. You can use the indicated image, colors and fonts or you can choose some of your own.
+Begin by reviewing the image below to see what the webpage will look like. You can use the indicated image, colors and fonts or you can choose some of your own.
 
 ![Recipe book wireframe small](/assets/images/character-card.png)
 
@@ -45,91 +45,100 @@ Create a new folder to hold this project called <kbd>character-card</kbd>. Then 
 </html>
 ```
 
-We also need some images for the recipes. Download the [recipe images](/examples/recipes/images.zip) and add them to your project folder.
-
-One last setup item. We need to copy and paste the contents of this file: [recipes.mjs](https://wdd131.netlify.app/examples/recipes/recipes.mjs), into the  `recipes.mjs` file you created earlier.
-
 Make sure to add a new link to the site `/index.html` file as well!
 
-## **02** Write the HTML
+## **02** Code the Object
 
-Next add the HTML to display the content. Create the elements that will house the major parts of the page first: `header`, `main`, and `footer`. The header will contain the logo and name of the site. In the `images` folder that you downloaded earlier you will notice a file called `recipe-book.png`. Use this in the title.
+Next add the JS Object in your .js file. This object called 'character' has 4 properties (name, class, level, and health) and 2 methods (attacked and levelUp).
 
-We are using some icons from a site called Flaticon. We are free to use them, but the license require some attribution in return.  This site asks that we add this link `<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>` somewhere on the page. Let's put it in the footer.
-
-Along with the attribution for the recipe book icon, we also need some social media icons.  These icons also require attribution. These icons are provided from Iconfinder through an account called AlfredoCreates. The license here is bit more flexible in how we attribute. This time we will do it in a comment. See below for an example:
-
-```markup
-<div class="social">
-	<!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-	<a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-	<a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-	<a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
-</div>
-```
-> So that attribution link at the bottom of our site is not the most attractive thing. We can minimize the size (And you should. Try 0.6em), so it is less noticiable, but it will still stick out. What if we don't want to attribute? That is easy...be willing to pay to use the resources. All of these sites remove the attribution requirement if you pay :)
-
-Next create the search form as shown in the wireframe and mockup.
-
-Finally, create the recipe section. You can look in the `recipes.mjs` file for information. Choose any recipe for now. For the ratings section we want to show filled in and empty stars like the mockup shows. We need to make sure that this very visual rating representation is also accessible. We can use `aria` attributes to do this as seen in the example below.
-
-```markup
-<span
-	class="rating"
-	role="img"
-	aria-label="Rating: 4 out of 5 stars"
->
-	<span aria-hidden="true" class="icon-star">⭐</span>
-	<span aria-hidden="true" class="icon-star">⭐</span>
-	<span aria-hidden="true" class="icon-star">⭐</span>
-	<span aria-hidden="true" class="icon-star-empty">⭐</span>
-	<span aria-hidden="true" class="icon-star-empty">☆</span>
-</span>
+```javascript
+const character = {
+      name: "Snortleblat",
+      class: "Swamp Beat Diplomat",
+      level: 5,
+      health: 100,
+      image: 'https://andejuli.github.io/img/snortleblat.png',
+      attacked() {
+        if (this.health >= 20) {
+          this.level -= 1;
+          this.health -= 20;
+        } else {
+            alert('Character Died');
+        }
+      },
+      levelUp() {
+        this.level += 1;
+        this.health += 20;
+      }
+    };
 ```
 
-The `aria-label` will be read by the screen reader, and the `aria-hidden="true"` on the stars will tell the screen reader to ignore those and they will not be read.
+We are using these properties to dynamically load our page and the methods will be used as the user interacts with buttons on the page.
+
 
 ## **03** Begin styling
 
-In the <kbd>recipes.css</kbd> file, begin writing the CSS to make your page match the details in the small screen mockup. Below are a few things to note:
-
-- You should resize your browser to be narrow, like a mobile screen. You can do this either through the developer tools, or just by changing the width of your browser
-- Start with the global styles.
-- The font used for the headlines is called `Amatic SC` and can be found on [Google fonts](https://fonts.google.com/). However if you look closely at the font you should notice that it breaks a couple of our accessibility rules for fonts. Choose another font that you think has a similar feel, but is better for accessibility.
-- You can use `Arial, Helvetica,sans-serif` for the rest of the fonts.
-- It would be good to add a rule to make our images responsive. We never want an image to be bigger than the space it has available. Something like the following is common:
+Copy the following styles into the .css file:
 
   ```css
-  img {
-  	max-width: 100%;
+  body {
+    font-family: Palatino Linotype, sans-serif;
+    background: #f0f4f8;
+  }
+  .card {
+    background: #313131;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+    width: 400px; 
+    margin: 100px auto;
+  }
+  .image{
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+    }
+  .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: -4px 0 20px 0;
+    color: white;
+    padding: 15px 0 15px 35px;
+    background-color: #5d747b;
+  }
+  .stats {
+    margin: 10px 15px 7px 35px;
+    text-align: left;
+  }
+  .stats p {
+    margin: 5px 0;
+    color: #f0f4f8;
+  }
+  .buttons {
+    text-align: center;
+  }
+  button {
+    padding: 8px 12px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5d747b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  button:hover {
+    background-color: #58605a;
   }
   ```
 
-- You will notice that with everything stacked up on the mobile, we really don't need to do much to get the layout right. You might still use Flexbox though, in column orientation, so we can use the alignment properties as needed.
-- Notice as well that on mobile the recipe description is not shown. When we make it responsive on the next step make sure to show the description on wide screens.
-- There are not a lot of colors in this page, but custom properties are still a good idea to set important style information. Choose a primary and secondary color to use and set them as you see below.
 
-> ```css
->  @import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
->  :root {
->  --primary-color: #1B98E0;
->  --secondary-color: #59c3c3;
->  --text-dark: #333;
->  --text-light: #ebebeb;
->  --primary-font: Arial, Helvetica,sans-serif;
->  --secondary-font: "Amatic SC";
->  }
-> ```
+## **04** Make it dynamic
 
-Continue adding CSS until your page matches the small screen mockup above.
+Target elements in the DOM and then assign them properties from our object to display the name, class, level, and health of our character.
 
-## **04** Make it responsive
+Listen for events that fire when user click the 'Attacked' and 'Level Up' buttons. Use the character methods .attacked() and .levelUp() to increase and decrease the level and health properties.
 
-At this point your page should look like the narrow mockup above. Now we can add the CSS to make our page responsive to larger screens sizes as well. We will need to use `@media` queries to check for the increasing size of the window. The queries will make changes at certain sizes (breakpoints as they are often called).
-
-Begin by widening your browser window. Watch what happens to the page. At a certain point you will notice that the layout starts looking a little stretched out. This will probably be around 600px. Let's add the first breakpoint there. Since we are using Flexbox this time around we can simply add a rule to change the `flex-direction` from column to row.
-
-Next we will keep widening the screen to watch for when the layout starts looking off again. The next point shuold be somewhere around 960px. Wider than this and the page looks too stretched out. Set this as the widest our layout can grow with another media query.
+The DOM properties will need to be updated each time the button is pressed as well. Think about placing the updates in a function that is called when the page first loads and each time the buttons are clicked.
 
 ## **05** Add Social Media Meta information
 
@@ -172,4 +181,4 @@ Commit your changes, then push them to GitHub. Wait a few minutes then check to 
 >
 > For more information see: [MDN: What's in the Head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: `https://githubusername.github.io/wdd131/recipes`. Make sure to replace "githubusername" with *your* actual github username :)
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: `https://githubusername.github.io/wdd131/character-card`. Make sure to replace "githubusername" with *your* actual github username :)
