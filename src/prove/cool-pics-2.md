@@ -76,91 +76,61 @@ window.addEventListener("resize", handleResize);
 
 ## **03** Image viewer
 
-We have one last feature to add. On a gallery site like this it is common to allow the user to click on an image to see a larger version. We could create a new html page, and link it to the image, or we could open the larger image in the same page in a modal...a element that opens over the other content. In this case we will do a modal.
+We have one last feature to add. On a gallery site like this it is common to allow the user to click on an image to see a larger version. We could create a new html page, and link it to the image, or we could open the larger image in the same page in a modal...a element that opens over the other content. In this case we will do a modal. The dialog element is a semantic choice when building a modal. It provides built-in functionality for modals like keyboard interaction and backdrop styling.
 
 Start by building the HTML and CSS for that modal.
 
-- At the top of your `body` element add a `div` that we can use as a container for the modal.  We also need a way to close the window eventually so add an `X` at the top, and then an `img` element to hold the actual image.  Your html might look like this:
+We can add this modal (or dialog element) as we run JavaScript and put it onto our page with innerHTML only when the user clicks and image. If we do it this way, we will create an element in JavaScript called `dialog` and the html that will be inserted into that dialog will look like this `<img><button class='close-viewer'>X</button>` 
+	```
 
-  ```markup
-  <div class="viewer">
-    <button class="close-viewer">X</button>
-    <img src="image.jpeg" alt="alt description">
-  </div>
-  ```
+All the attributes for the img will be added in JavaScript according to which image the user clicks on.
 
-- We will style it for the small screen first. Set the position of this element to `fixed`. Then make it take up the whole screen (Hint: `top:0;left:0;bottom:0;right:0;`). Also set the background to be a semi-transparent grey (`rgba(0, 0, 0, 0.75);`)
-- It would be nice to center the image in the space. We can easily do this with Grid.
-- You will probably need to change the font color so we can see our X.
-- To make the X stay above the image we can again use grid to place it in the first row and the image in the second row.
+- We will style it for the small screen first. We will want the modal to fill the entire screen so in CSS you can set the dialog element to `width: 100%`and `height: 100%`. You can make the page show through the background of the dialog by setting the background color to be partially transparent `background-color: rgba(0, 0, 0, .6)` The black will be 60% opaque and 40% transparent.
+- It would be nice to center the image in the space. Try `margin: 0 auto;` for that image. To bring it down a bit from the top edge you can try something like `margin: 20vh auto`. You can also adjust the width to something like 90%.
+- To make the X stay to the upper right of the image. Target the `close-viewer` and give it a `position: absolute` and have it some down the same amount of space as the image. For example: `top:20vh`. 
 - If we let the image expand to the whole width of the screen we might end up with images that are too tall sometimes. Let's set the `max-height` of the image to 100%;
 - If you have issues with the viewer showing up behind other things...you can add a `z-index: 10`; to fix it.
 
 > Notice that the example above is using `<button>` instead of `<span>`. Why do you think this is?  The X is going to trigger an action when it is clicked. That is exactly what buttons are for in HTML. We could have just made it a link, but a screen reader expects buttons to be used for actions, and links to be used for navigation. Buttons are also more semantic, and are easier to style.
 >
-> You should style the button to match the mockup.
+> You can style your close button differently or leave it with the default look.
+>
 
-Once you are done with your styling the modal should look something like this (You won't have an image showing yet...we will do that soon.):
+Once you are done styling the modal, it should look something like this (You won't have an image showing yet...we will do that soon.):
 
 ![Cool Pics small modal example](/assets/images/cool-pics-modal-sm.jpeg)
 
-For the large screen version of our modal let's not let the modal take up the whole screen. We should add a little more padding around the image as well.
+
 ![Cool Pics large modal example](/assets/images/cool-pics-modal-lg.jpeg)
 
 ## **04** Make it work!
 
 The next step is to add the Javascript to make the modal show when an image in the gallery is clicked.
 
-- Copy the html for the modal from the index.html file, and add it to a function called `viewerTemplate` in the js file. This function should accept two arguments: the path for the image, and the alt text. Insert those into the correct places in the template and return it from the function.
-    *Make sure to remove the html for the viewer from the index.html file!*
+- Dialog elements are hidden by default. So when the user clicks an image we will use the .showModal() method to show it in our JavaScript.
+    
+- We will need to target all the elements that might be clicked or have attributes retrieved or added to them. The gallery, the modal, the modal image, and the close button. For example, to target the gallery I might use `const gallery = document.querySelector('.gallery');`
 
-<details>
-<summary>viewer template function</summary>
+- Add a function that will handle the event of the entire image gallery pictures being clicked. To find out the image that was clicked inside the gallery you can use the 'event' that is passed into the function as a parameter. The event parameter in a function is a build-in-object that is always automatically passed to event handler functions. It encapsulated information about the event like when or where the event occured. We can use event.target.closest('img') to discover which image was clicked. 
 
-```javascript
-function viewerTemplate(pic, alt) {
-  return `<div class="viewer">
-    <button class="close-viewer">X</button>
-    <img src="${pic}" alt="${alt}">
-    </div>`;
-}
-```
+This function will also get the src and alt attributes of that clicked image and use them to show the larger image of the same similar name. Remember our small image was norris-sm.jpeg and we will want to use norris-full.jpeg. So we use a .split('-') method on the name to split it at the '-' dash and concatenate on full.jpeg instead of sm.jpeg. .split() take both the name norris-sm.jpeg and makes it an array of two string values, 'norris' and 'sm-jpeg'. So to add just the first array object 'norris' we'd use something like this: src.split('-')[0] + '-full.jpeg'. The [0] says to use the first part of the array, the 'norris' and then we add on the '-full.jpeg' to it with the concatenation symbol '+'. 
 
-</details>
+And also for this function, don't forget to add the modal to the screen with the .showModal();
 
-- Add a function called `viewHandler`. You can use the following as a guide for writing the viewHandler function
+- Add a function that will handle the close button of the dialog being clicked. You use the .close() for example modal.close();
+
+- Add a function that will close the modal if the user clicks outside of the modal image. It will look like this:
 
 ```javascript
-function viewHandler(event) {
-	// create a variable to hold the element that was clicked on from event.target
-
-	// get the src attribute from that element and 'split' it on the "-"
-
-	// construct the new image file name by adding "-full.jpeg" to the first part of the array from the previous step
-
-	// insert the viewerTemplate into the top of the body element
-	// (element.insertAdjacentHTML("afterbegin", htmltoinsert))
-
-	// add a listener to the close button (X) that calls a function called closeViewer when clicked
-
-}
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.close();
+  }
+})
 ```
-
-- Add an event listener to the `.gallery` section of your HTML page. It should watch for a click, and use a function called `viewHandler` as the event handler function.
-- Write the `closeViewer` function that will remove the viewer div from the DOM when clicked.
-
-<details>
-<summary>Emergency use only!</summary>
-
-- The element that was clicked on will always be found in `event.target` in the event handler function.
-- All strings in Javascript have a method on them called `split`. You just need to pass in the character you want to split the string up in as an argument. If you need more guidance on using this, do a quick search or ask an AI...
-- element.insertAdjacentHTML is an extremely useful upgrade to just modifying `innerHTML` directly on an element. We have 4 options when using it: beforebegin, afterbegin, beforeend, and afterend. See [MDN: insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) to learn more.
-- All elements have a `remove` method that can be used to remove the element from the DOM
-
-</details>
 
 ## **05** Commit and push to Github
 
 Commit your changes, then push them to GitHub. Wait a few minutes then check to make sure they show on Github pages. If you need a review on how to do this check out [github instructions](https://byui-cit.github.io/learning-modules/modules/general/hosting-git-gihub/ponder2/). Start around step 3.
 
-After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/coolpics</kbd>. Make sure to replace "githubusername" with *your* actual github username :)
+After verifying that your page updated, submit the URL to your page in Ilearn. The URL will look something like this: <kbd>https://githubusername.github.io/wdd131/coolpics</kbd>. Make sure to replace "githubusername" with *your* actual github username.
