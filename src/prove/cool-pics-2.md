@@ -100,11 +100,11 @@ Once you are done styling the modal, it should look something like this (You won
 
 Small device:
 
-![Cool Pics small modal example](/assets/images/cool-pics-modal-sm2.jpeg)
+![Cool Pics small modal example](/assets/images/cool-pics-modal-sm2.jpg)
 
 Larger device:
 
-![Cool Pics large modal example](/assets/images/cool-pics-modal-lg2.jpeg)
+![Cool Pics large modal example](/assets/images/cool-pics-modal-lg2.jpg)
 
 ## **04** Make it work!
 
