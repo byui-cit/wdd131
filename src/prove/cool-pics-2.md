@@ -81,13 +81,13 @@ We have one last feature to add. On a gallery site like this it is common to all
 Start by building the HTML and CSS for that modal.
 
 We can add this modal (or dialog element) as we run JavaScript and put it onto our page with innerHTML only when the user clicks and image. If we do it this way, we will create an element in JavaScript called `dialog` and the html that will be inserted into that dialog will look like this `<img><button class='close-viewer'>X</button>` 
-	```
+
 
 All the attributes for the img will be added in JavaScript according to which image the user clicks on.
 
-- We will style it for the small screen first. We will want the modal to fill the entire screen so in CSS you can set the dialog element to `width: 100%`and `height: 100%`. You can make the page show through the background of the dialog by setting the background color to be partially transparent `background-color: rgba(0, 0, 0, .6)` The black will be 60% opaque and 40% transparent.
+- We will style it for the small screen first. We will want the modal to fill the entire screen so in CSS you can set the dialog element to `width: 100%` and `height: 100%`. You can make the page show through the background of the dialog by setting the background color to be partially transparent `background-color: rgba(0, 0, 0, .6)` The black will be 60% opaque and 40% transparent.
 - It would be nice to center the image in the space. Try `margin: 0 auto;` for that image. To bring it down a bit from the top edge you can try something like `margin: 20vh auto`. You can also adjust the width to something like 90%.
-- To make the X stay to the upper right of the image. Target the `close-viewer` and give it a `position: absolute` and have it some down the same amount of space as the image. For example: `top:20vh`. 
+- To make the 'X' (or close button) stay to the upper right of the image. Target the `close-viewer` and give it a `position: absolute` and have it come down the same amount of space as the image. For example: `top:20vh`. 
 - If we let the image expand to the whole width of the screen we might end up with images that are too tall sometimes. Let's set the `max-height` of the image to 100%;
 - If you have issues with the viewer showing up behind other things...you can add a `z-index: 10`; to fix it.
 
@@ -96,12 +96,15 @@ All the attributes for the img will be added in JavaScript according to which im
 > You can style your close button differently or leave it with the default look.
 >
 
-Once you are done styling the modal, it should look something like this (You won't have an image showing yet...we will do that soon.):
+Once you are done styling the modal, it should look something like this (You won't have an image showing yet...we will do that soon.)
 
-![Cool Pics small modal example](/assets/images/cool-pics-modal-sm.jpeg)
+Small device:
 
+![Cool Pics small modal example](/assets/images/cool-pics-modal-sm2.jpeg)
 
-![Cool Pics large modal example](/assets/images/cool-pics-modal-lg.jpeg)
+Larger device:
+
+![Cool Pics large modal example](/assets/images/cool-pics-modal-lg2.jpeg)
 
 ## **04** Make it work!
 
@@ -111,11 +114,13 @@ The next step is to add the Javascript to make the modal show when an image in t
     
 - We will need to target all the elements that might be clicked or have attributes retrieved or added to them. The gallery, the modal, the modal image, and the close button. For example, to target the gallery I might use `const gallery = document.querySelector('.gallery');`
 
-- Add a function that will handle the event of the entire image gallery pictures being clicked. To find out the image that was clicked inside the gallery you can use the 'event' that is passed into the function as a parameter. The event parameter in a function is a build-in-object that is always automatically passed to event handler functions. It encapsulated information about the event like when or where the event occured. We can use event.target.closest('img') to discover which image was clicked. 
+- Add a function that will handle the event of the entire image gallery pictures being clicked. 
 
-This function will also get the src and alt attributes of that clicked image and use them to show the larger image of the same similar name. Remember our small image was norris-sm.jpeg and we will want to use norris-full.jpeg. So we use a .split('-') method on the name to split it at the '-' dash and concatenate on full.jpeg instead of sm.jpeg. .split() take both the name norris-sm.jpeg and makes it an array of two string values, 'norris' and 'sm-jpeg'. So to add just the first array object 'norris' we'd use something like this: src.split('-')[0] + '-full.jpeg'. The [0] says to use the first part of the array, the 'norris' and then we add on the '-full.jpeg' to it with the concatenation symbol '+'. 
+  - To find out the image that was clicked inside the gallery you can use the 'event' that is passed into the function as a parameter. The event parameter in a function is a build-in-object that is always automatically passed to event handler functions. It encapsulated information about the event like when or where the event occured. We can use event.target.closest('img') to discover which image was clicked. 
 
-And also for this function, don't forget to add the modal to the screen with the .showModal();
+  - This function will also get the src and alt attributes of that clicked image and use them to show the larger image of with a similar name. Remember our small image was norris-sm.jpeg and we will want to use norris-full.jpeg in the modal. So we use a .split('-') method on the name to split it at the '-' dash and concatenate the string 'full.jpeg' to replace 'sm.jpeg'. .split() takes the string 'norris-sm.jpeg' and makes it an array of two string values, 'norris' and 'sm-jpeg'. So to add just the first array object 'norris' we'd use something like this: src.split('-')[0] + '-full.jpeg'. The [0] says to use the first part of the array, the 'norris' and then we add on the '-full.jpeg' to it with the concatenation symbol '+'. 
+
+  - Also for this function, don't forget to add the modal to the screen with the .showModal();
 
 - Add a function that will handle the close button of the dialog being clicked. You use the .close() for example modal.close();
 
