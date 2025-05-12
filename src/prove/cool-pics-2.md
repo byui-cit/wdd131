@@ -78,7 +78,7 @@ window.addEventListener("resize", handleResize);
 
 We have one last feature to add. On a gallery site like this it is common to allow the user to click on an image to see a larger version. We could create a new html page, and link it to the image, or we could open the larger image in the same page in a modal...a element that opens over the other content. In this case we will do a modal. The dialog element is a semantic choice when building a modal. It provides built-in functionality for modals like keyboard interaction and backdrop styling.
 
-> The <dialog> tag makes it easy to create a temporary popup dialog or modals on web pages. It usually appears on top of the main content and displays information or prompts user for information. JavaScript would be used to open and close the dialog.
+> The `<dialog>` tag makes it easy to create a temporary popup dialog or modals on web pages. It usually appears on top of the main content and displays information or prompts user for information. JavaScript would be used to open and close the dialog.
 >
 
 Start by building the HTML and CSS for that modal.
