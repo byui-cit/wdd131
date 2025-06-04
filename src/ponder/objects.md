@@ -161,15 +161,6 @@ this.sections;
 
 1. Add a a new key to your object called enrollStudent. The value of this key should be an anonymous function that takes one argument: sectionNum. Functions added to objects like this are commonly referred to as methods. This method will allow us to add a student to a section.
 
-<div class="callout">
-`this` gets set normally when we call a method with the dot operator. So for example if we did this:
-```javascript
-aCourse.enrollStudent(1);
-```
-Then this would be equal to aCourse.
-this will be equal to whatever is on the left side of the dot.
-</div>
-
 2. Complete the enrollStudent method. It should find the section that was given in this.sections. Check out Array.findIndex() if you are not sure how to find the right section.
 
 3. If the section exists, then add 1 to enrolled, and then call the renderSections function to show our change.
