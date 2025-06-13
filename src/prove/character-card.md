@@ -54,13 +54,12 @@ Next add the JS Object in your .js file. This object called 'character' has 4 pr
 ```javascript
 const character = {
       name: "Snortleblat",
-      class: "Swamp Beat Diplomat",
+      class: "Swamp Beast Diplomat",
       level: 5,
       health: 100,
-      image: 'https://andejuli.github.io/img/snortleblat.png',
+      image: 'https://andejuli.github.io/wdd131/character_card/snortleblat.webp',
       attacked() {
         if (this.health >= 20) {
-          this.level -= 1;
           this.health -= 20;
         } else {
             alert('Character Died');
@@ -94,6 +93,7 @@ Copy the following styles into the .css file:
   }
   .image{
     width: 400px;
+    height: 400px;
     border-radius: 15px 15px 0 0;
     }
   .name {
@@ -157,11 +157,11 @@ You should have done some exploration this week about Social Media Meta tags. Th
 
 Add those to the `head` of the document, then change the values to reflect the content of the page. You can see a list of valid types on the [open graph website](https://ogp.me/#types).
 
-> You may be wondering what to put in for all those values? Well, you can use the same values you used for the `title`and `description` meta tags on your page for the equivalent og tags. The image should be something that represents your page. This is the image  that will be shown when someone shares your page on social media. The `url`  should be the URL of the page you are on. The `twitter:card` is a Twitter specific tag that tells Twitter how to display the page when someone shares it. The `summary_large_image` tells Twitter to use the image you provided as the main image for the page.
+> You may be wondering what to put in for all those values? Well, you can use the same values you used for the `title`and `description` meta tags on your page for the equivalent og tags. The image should be something that represents your page. This is the image  that will be shown when someone shares your page on social media. The `url`  should be the URL of the page you are on. The `twitter:card` is an X social meda specific tag that tells X how to display the page when someone shares it. The `summary_large_image` tells X to use the image you provided as the main image for the page.
 
 ## **06** Check with Lighthouse
 
-Open your page in Chrome, and access the Lighthouse tool. Run it for mobile first. How does it look? Read through the errors and recommendations. Make changes to get the scores as close to 100 as you can! You should be able to get to at least 95-96%. Performance might be lower due to the large 'hotlinked' images and that is ok for this assignment.
+Open your page in Chrome, and access the Lighthouse tool. Run it for mobile first. How does it look? Read through the errors and recommendations. Make changes to get the scores as close to 100 as you can! You should be able to get to at least 95-96%. Performance might be a bit lower due to the 'hotlinked' images and that is ok for this assignment.
 
 ## **07** Commit and push to Github
 
